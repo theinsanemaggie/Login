@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - OXE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffe8ce;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e63c23;
+            margin-bottom: 1.5rem;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 10px;
+            background-color: #ffe8ce;
+            font-size: 1rem;
+        }
+
+        .btn {
+            background-color: #008c47;
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            width: 100%;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+            .btn:hover {
+                background-color: #006e38;
+            }
+
+        .error {
+            color: #e63c23;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-box" method="post" action="/Login/Login">
+        <h1>Bienvenido</h1>
+        <input type="text" name="username" placeholder="Usuario" required />
+        <input type="password" name="password" placeholder="Cotraseña" required />
+        <button type="submit" class="btn">Entrar</button>
+
+        @if (!string.IsNullOrEmpty(ViewBag.Error as string))
+        {
+            <p class="error">@ViewBag.Error</p>
+        }
+    </form>
+</body>
+</html>
