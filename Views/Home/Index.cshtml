@@ -1,78 +1,14 @@
 ﻿@{
-    ViewBag.Title = "Home";
-    Layout = null;
-    var username = Context.Session.GetString("User");
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Inicio";
 }
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f6bc3f;
-            color: #fff;
-        }
+<div class="card">
+    <h1>¡Bienvenidos a mi página web!</h1>
+    @if (ViewBag.Mensaje != null)
+    {
+        <p style="color: #e63c23; font-weight: bold;">@ViewBag.Mensaje</p>
+    }
+    <p>En proceso de construcción</p>
+</div>
 
-        header {
-            background-color: #5c30ff;
-            padding: 1.5rem;
-            text-align: center;
-            border-bottom: 5px solid #008c47;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-
-        main {
-            padding: 2rem;
-            background-color: #ffe8ce;
-            min-height: 80vh;
-            border-top-left-radius: 40px;
-            border-top-right-radius: 40px;
-            color: #333;
-        }
-
-        .card {
-            background-color: #f791c3;
-            padding: 1rem;
-            border-radius: 15px;
-            margin-bottom: 1.5rem;
-            color: white;
-            font-weight: bold;
-        }
-
-        .logout-btn {
-            background-color: #e63c23;
-            color: white;
-            padding: 0.8rem 1rem;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            float: right;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Panel</h1>
-        <form method="post" action="/Login/Logout">
-            <button class="logout-btn">Salir</button>
-        </form>
-    </header>
-
-    <main>
-        <div class="card">
-            ¡Hola, @username!
-        </div>
-        <div class="card" style="background-color: #008c47;">
-            Bienvenidos a mi página web
-        </div>
-    </main>
-</body>
-</html>

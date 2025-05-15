@@ -32,9 +32,9 @@ namespace LoginMVC.Controllers
                 var identity = new ClaimsIdentity(claims, "Cookies");
                 var principal = new ClaimsPrincipal(identity);
 
-                await HttpContext.SignInAsync("Cookies", principal); // 🔑 FIRMAR AL USUARIO
+                await HttpContext.SignInAsync("Cookies", principal); 
 
-                return RedirectToAction("Index", "Home"); // ✅ Redirigir a página real del sistema
+                return RedirectToAction("Index", "Home"); 
             }
             else
             {
