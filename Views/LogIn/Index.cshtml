@@ -8,11 +8,12 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <style>
+        /*nota: si quiero modificar la tipografia del txt ponerlo en su clase*/
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #ffe8ce;
-            display: flex;
+            font-family: Consolas, sans-serif;
+            background-color: #AA0235;
+            display: flex; /*esto hace de contenedor o "cajita"*/
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -22,16 +23,23 @@
             background-color: #fff;
             padding: 0.8rem;
             border-radius: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px #030206;
             width: 300px;
             text-align: center;
         }
 
         h1 {
-            color: #e63c23;
+            color: #ad2831;
             margin-bottom: 1.5rem;
         }
 
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* el cover hace que la img esté dentro del contenedor y se adapte a su tamaño */
+        }
+
+        /*solo modifica el txt de usuario y contraseña*/
         input[type="text"],
         input[type="password"] {
             width: 100%;
@@ -39,15 +47,18 @@
             margin: 0.5rem 0;
             border: none;
             border-radius: 10px;
-            background-color: #ffe8ce;
+            background-color: #edebdd;
+            font-family: Consolas, sans-serif;
+            color: #ad2831;
             font-size: 1rem;
             padding: 0 1rem; 
             box-sizing: border-box; 
         }
 
         .btn {
-            background-color: #008c47;
+            background-color: #630000;
             color: white;
+            font-family: Consolas, sans-serif;
             border: none;
             padding: 0.8rem;
             width: 100%;
@@ -58,10 +69,11 @@
         }
 
         .btn:hover {
-            background-color: #006e38;
+            background-color: #630000;
         }
 
         .error {
+            /*correspondiente al viewbag*/
             color: #e63c23;
             font-size: 0.9rem;
             margin-top: 1rem;
@@ -71,8 +83,9 @@
 <body>
     <form class="login-box" method="post" action="/Login/Login">
         <h1>Bienvenido</h1>
-        <input type="text" name="username" placeholder="Usuario" required />
-        <input type="password" name="password" placeholder="Cotraseña" required />
+        <img src="~/images/clumsy.png" alt="monigote" class="img"/>
+        <input type="text" name="username" placeholder="Usuario" required/>
+        <input type="password" name="password" placeholder="Contraseña" required />
         <button type="submit" class="btn">Entrar</button>
 
         @if (!string.IsNullOrEmpty(ViewBag.Error as string))

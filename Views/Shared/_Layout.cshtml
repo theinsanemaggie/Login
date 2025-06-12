@@ -7,31 +7,38 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #fff6e9;
+            font-family: Consolas, sans-serif;
+            background-color: #EDEBDD;
         }
 
         .navbar {
-            background-color: #ffe8ce;
-            padding: 1rem;
+            background-color: #AA0235;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .navbar a {
-            color: #ff7b00;
-            text-decoration: none;
-            margin: 0 0.5rem;
-            font-weight: bold;
+        .navbar-left, .navbar-right {
+            display: flex;
+            align-items: center;
         }
 
-        .circle {
-            width: 30px;
-            height: 30px;
-            background-color: #ff7b00;
-            border-radius: 50%;
+        .navbar a, .navbar form button {
+            color: #fff;
+            text-decoration: none;
+            font-family: Consolas, sans-serif;
+            margin: 0 0.5rem;
+            font-weight: bold;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
         }
+
+            .navbar a:hover, .navbar form button:hover {
+                text-decoration: underline;
+            }
 
         .container {
             padding: 2rem;
@@ -39,19 +46,23 @@
         }
 
         .card {
-            background-color: white;
+            background-color: #AA0235;
+            border-radius: 2rem;
+            width: 300px;
+            text-align: center;
             padding: 1.5rem;
-            border-radius: 1.5rem;
             display: inline-block;
             margin-bottom: 2rem;
         }
 
         h1 {
-            color: #ff7b00;
+            color: #fff;
+            font-family: Consolas, sans-serif;
         }
 
         p {
-            color: #ff7b00;
+            color: #fff;
+            font-family: Consolas, sans-serif;
             font-size: 1.2rem;
         }
 
@@ -60,26 +71,26 @@
         }
 
         .footer {
-            background-color: #fde6cc;
-            color: #ff7300;
+            background-color: #AA0235;
+            color: #fff;
             text-align: center;
             padding: 1rem 0;
             font-size: 0.9rem;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            border-top: 1px solid #ffcd9b;
         }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <div>
-            <a href="#">Inicio</a>
-            <a href="#">Perfil</a>
-            <a href="#">Ayuda</a>
+        <div class="navbar-left">
+            <a asp-controller="Home" asp-action="Index">Inicio</a>
+            <a asp-controller="User" asp-action="Index">Control de usuarios</a>
+            <a asp-controller="Home" asp-action="Help">Ayuda</a>
         </div>
-        <div class="circle"></div>
+        <div class="navbar-right">
+            <form asp-controller="Login" asp-action="Logout" method="post">
+                <button type="submit">Cerrar sesión</button>
+            </form>
+        </div>
     </div>
 
     <div class="container">
