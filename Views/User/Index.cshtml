@@ -3,7 +3,7 @@
 }
 
 <div class="contenedor-principal">
-    <h1 class="titulo-usuarios">Lista de Usuarios</h1>
+    <h1 class="titulo-usuarios">Alta de Usuarios</h1>
 
     <form asp-controller="User" asp-action="ForMethod" method="get" class="formulario-usuarios">
         <div class="campo">
@@ -28,7 +28,7 @@
         </div>
         <div class="campo">
             <label>Fecha de nacimiento:</label>
-            <input type="text" name="birthday" />
+            <input type="datetime" name="birthday" />
         </div>
 
         <button type="submit" class="btn-guardar">Guardar y cargar personas</button>

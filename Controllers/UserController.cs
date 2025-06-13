@@ -11,9 +11,55 @@ namespace LoginMVC.Controllers
         {
             return View();
         }
+        private readonly string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
 
+        //lista copiada del profe
+        public ActionResult List()
+        { 
+            List<UserModel> user = new List<UserModel>();
+            using (SqlConnection connection = new SqlConnection(connectionString)) // corregido
+            {
+                string query = "SELECT id, username, password, email, name, lastname, birthday from userTable";
 
-        public ActionResult ForMethod(string username, string password, string email, string name, string lastname, string birthday)
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    user.Add(new UserModel
+                    {
+                        id = reader.GetInt32(0),
+                        username = reader.GetString(1),
+                        password = reader.GetString(2),
+                        email = reader.GetString(3),
+                        name = reader.GetString(4),
+                        lastname = reader.GetString(5),
+                        birthday = Convert.ToDateTime(reader.GetString(6)),
+                    });
+
+                }
+                return View(user);
+            }
+            //return View();
+        }
+
+        public ActionResult Eliminar(int id)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "delete from userTable where id =  @id";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", id);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+
+            return RedirectToAction("List");
+        }
+
+        //código "for method" revisado y corregido, no tocar
+        public ActionResult ForMethod(string username, string password, string email, string name, string lastname, DateTime birthday)
         {
             
             string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
