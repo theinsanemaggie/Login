@@ -1,107 +1,83 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Maggieweb</title>
     <style>
+        /* Tu CSS aquí, igual que antes */
         body {
             margin: 0;
             font-family: Consolas, sans-serif;
             background-color: #EDEBDD;
         }
 
-        .navbar {
+        /* NAV STICKY */
+        .nav-menu {
             background-color: #AA0235;
             padding: 1rem 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem auto; /* lo centra y separa del borde */
+            max-width: 800px;
         }
 
-        .navbar-left, .navbar-right {
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar a, .navbar form button {
-            color: #fff;
-            text-decoration: none;
-            font-family: Consolas, sans-serif;
-            margin: 0 0.5rem;
-            font-weight: bold;
-            background: none;
+        .nav-button {
+            padding: 0.6rem 1.2rem;
+            background-color: white;
+            color: #AA0235;
             border: none;
-            cursor: pointer;
-            padding: 0;
+            border-radius: 1rem;
+            text-decoration: none;
+            font-family: Consolas, monospace;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-            .navbar a:hover, .navbar form button:hover {
-                text-decoration: underline;
-            }
-
-        .container {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .card {
+        .nav-button:hover {
             background-color: #AA0235;
-            border-radius: 2rem;
-            width: 300px;
-            text-align: center;
-            padding: 1.5rem;
-            display: inline-block;
-            margin-bottom: 2rem;
+            color: white;
+            cursor: pointer;
         }
 
-        h1 {
-            color: #fff;
-            font-family: Consolas, sans-serif;
+        .logout {
+            background-color: #dc3545;
+            color: white;
         }
 
-        p {
-            color: #fff;
-            font-family: Consolas, sans-serif;
-            font-size: 1.2rem;
-        }
-
-        .wrapper {
-            flex: 1;
+        .logout:hover {
+            background-color: #a71d2a;
         }
 
         .footer {
             background-color: #AA0235;
-            color: #fff;
+            color: white;
             text-align: center;
-            padding: 1rem 0;
-            font-size: 0.9rem;
+            padding: 1rem;
+            margin-top: 4rem;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-left">
-            <a asp-controller="Home" asp-action="Index">INICIO</a>
-            <a asp-controller="User" asp-action="Index">ALTA USUARIO</a>
-            <a asp-controller="User" asp-action="List">CONTROL USUARIO</a>
-  
-        </div>
-        <div class="navbar-right">
-            <form asp-controller="Login" asp-action="Logout" method="post">
-                <button type="submit">CERRAR SESIÓN</button>
-            </form>
-        </div>
-    </div>
+    <!-- MENÚ SUPERIOR -->
+    <nav class="nav-menu">
+        <a href="/Home/Index" class="nav-button">INICIO</a>
+        <a href="/User/Index" class="nav-button">ALTA USUARIO</a>
+        <a href="/User/List" class="nav-button">CONTROL USUARIO</a>
+        <a href="/Login/Logout" class="nav-button logout">CERRAR SESIÓN</a>
+    </nav>
 
-    <div class="container">
-        @RenderBody()
-    </div>
+    <!-- CONTENIDO DINÁMICO DE VISTAS -->
+    @RenderBody()
 
-    <div class="wrapper">
-        @RenderBody()
-    </div>
-
+    <!-- FOOTER -->
     <footer class="footer">
         <p>&copy; @DateTime.Now.Year Maggieweb - Todos los derechos reservados</p>
     </footer>

@@ -11,11 +11,12 @@ namespace LoginMVC.Controllers
         {
             return View();
         }
+
         private readonly string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
 
-        //lista copiada del profe
+        //lista copiada del profe -- corregida, no tocar
         public ActionResult List()
-        { 
+        {
             List<UserModel> user = new List<UserModel>();
             using (SqlConnection connection = new SqlConnection(connectionString)) // corregido
             {
@@ -37,18 +38,17 @@ namespace LoginMVC.Controllers
                         lastname = reader.GetString(5),
                         birthday = Convert.ToDateTime(reader.GetString(6)),
                     });
-
                 }
+
                 return View(user);
             }
-            //return View();
         }
 
-        public ActionResult Eliminar(int id)
+        public ActionResult Delete(int id)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "delete from userTable where id =  @id";
+                string query = "DELETE FROM userTable WHERE id = @id";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@id", id);
                 connection.Open();
@@ -61,7 +61,6 @@ namespace LoginMVC.Controllers
         //código "for method" revisado y corregido, no tocar
         public ActionResult ForMethod(string username, string password, string email, string name, string lastname, DateTime birthday)
         {
-            
             string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
             try
             {
@@ -70,7 +69,7 @@ namespace LoginMVC.Controllers
                     string query = "INSERT INTO userTable (username, password, email, name, lastname, birthday) VALUES (@username, @password, @email, @name, @lastname, @birthday)";
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@username", username);
-                    command.Parameters.AddWithValue("@password", password); // ← corregido (estaba mal escrito como @passqword)
+                    command.Parameters.AddWithValue("@password", password);
                     command.Parameters.AddWithValue("@email", email);
                     command.Parameters.AddWithValue("@name", name);
                     command.Parameters.AddWithValue("@lastname", lastname);
@@ -80,7 +79,6 @@ namespace LoginMVC.Controllers
                     int rowsAffected = command.ExecuteNonQuery();
                     ViewBag.Message = "Usuario insertado exitosamente";
                     connection.Close();
-                    
                 }
             }
             catch (Exception ex)
@@ -89,6 +87,66 @@ namespace LoginMVC.Controllers
             }
 
             return View("Index");
+        }
+
+        //código del profe con modificaciones -- revisado, no tocar
+        [HttpPost]
+        public IActionResult Edit(UserModel user)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = @"UPDATE userTable SET
+                                username = @username,
+                                password = @password,
+                                email = @email,
+                                name = @name,
+                                lastname = @lastname,
+                                birthday = @birthday
+                                WHERE id = @id";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@username", user.username);
+                command.Parameters.AddWithValue("@password", user.password);
+                command.Parameters.AddWithValue("@email", user.email);
+                command.Parameters.AddWithValue("@name", user.name);
+                command.Parameters.AddWithValue("@lastname", user.lastname);
+                command.Parameters.AddWithValue("@birthday", user.birthday);
+                command.Parameters.AddWithValue("@id", user.id);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                return RedirectToAction("List");
+            }
+        }
+
+        public IActionResult Edit(int id)
+        {
+            UserModel user = new UserModel();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT id, username, password, email, name, lastname, birthday FROM userTable WHERE id = @id";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", id);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    user.id = reader.GetInt32(0);
+                    user.username = reader.GetString(1);
+                    user.password = reader.GetString(2);
+                    user.email = reader.GetString(3);
+                    user.name = reader.GetString(4);
+                    user.lastname = reader.GetString(5);
+                    user.birthday = Convert.ToDateTime(reader.GetString(6)); // ← corregido
+                }
+
+                return View(user);
+            }
         }
     }
 }
