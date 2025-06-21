@@ -1,34 +1,82 @@
 ﻿@{
     ViewData["Title"] = "Inicio";
-    var nombreUsuario = User.Identity?.Name ?? "Usuario"; // Si no hay nombre, usa "Usuario"
+    var nombreUsuario = User.Identity?.Name ?? "Usuario";
 }
 
-<div class="main-content" style="text-align:center; padding:3rem 1rem; max-width: 900px; margin: auto;">
+<style>
+    .btn-option {
+        background-color: #DE5C8F;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 1rem;
+        font-family: Consolas, monospace;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
 
-    <h1 class="main-title" style="color:#2b2b2b; font-size:2.2rem; margin-bottom:2.5rem;">
-        ¡Bienvenido @nombreUsuario! ¿Qué vamos a hacer hoy?
-    </h1>
+    .btn-option:hover {
+        background-color: #872d72;
+    }
 
-    <div class="options" style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap;">
+    .option-card {
+        background: #FBF4EB;
+        border: 2px solid #e6e6e6;
+        border-radius: 1.5rem;
+        padding: 2rem 1.5rem;
+        width: 280px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-        <div class="option-card" style="background:#fff; border:2px solid #e6e6e6; border-radius:1.5rem; padding:2rem 1.5rem; width:280px; box-shadow:0 4px 8px rgba(0,0,0,0.05); transition:transform 0.3s, box-shadow 0.3s;">
-            <h3 style="color:#AA0235; margin-bottom:1rem; font-size:1.3rem;">Carga de Usuarios</h3>
+    .option-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .options {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .main-title {
+        color: #2b2b2b;
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .main-content {
+        text-align: center;
+        padding: 3rem 1rem;
+        max-width: 900px;
+        margin: auto;
+    }
+</style>
+
+<div class="main-content">
+    <h1 class="main-title">¡Bienvenido @nombreUsuario! ¿Qué vamos a hacer hoy?</h1>
+
+    <div class="options">
+
+        <div class="option-card">
+            <h3 style="color:#DE5C8F; margin-bottom:1rem; font-size:1.3rem;">Carga de Usuarios</h3>
             <p style="color:#555; font-size:0.95rem; margin-bottom:1.5rem;">
                 Agregá nuevos usuarios al sistema de manera rápida y sencilla.
             </p>
-            <a href="/User/Index" class="btn-option" style="background-color:#AA0235; color:white; border:none; padding:0.6rem 1.2rem; border-radius:1rem; font-family: Consolas, monospace; font-size:1rem; cursor:pointer; text-decoration:none; display:inline-block; transition: background-color 0.3s;">
-                Ir a carga
-            </a>
+            <a href="/User/Index" class="btn-option">Ir a carga</a>
         </div>
 
-        <div class="option-card" style="background:#fff; border:2px solid #e6e6e6; border-radius:1.5rem; padding:2rem 1.5rem; width:280px; box-shadow:0 4px 8px rgba(0,0,0,0.05); transition:transform 0.3s, box-shadow 0.3s;">
-            <h3 style="color:#AA0235; margin-bottom:1rem; font-size:1.3rem;">Modificaciones</h3>
+        <div class="option-card">
+            <h3 style="color:#DE5C8F; margin-bottom:1rem; font-size:1.3rem;">Modificaciones</h3>
             <p style="color:#555; font-size:0.95rem; margin-bottom:1.5rem;">
                 Editá o eliminá usuarios existentes fácilmente.
             </p>
-            <a href="/User/List" class="btn-option" style="background-color:#AA0235; color:white; border:none; padding:0.6rem 1.2rem; border-radius:1rem; font-family: Consolas, monospace; font-size:1rem; cursor:pointer; text-decoration:none; display:inline-block; transition: background-color 0.3s;">
-                Ir a modificaciones
-            </a>
+            <a href="/User/List" class="btn-option">Ir a modificaciones</a>
         </div>
 
     </div>

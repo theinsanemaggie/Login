@@ -6,18 +6,30 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Maggieweb</title>
+    <title>@ViewData["Title"] - Novetech</title>
     <style>
-        /* Tu CSS aquí, igual que antes */
+        /* Paleta de colores
+            #EEE2DF -- cremita
+            #DEC1DB -- rosa bebé
+            #5B61B2 -- lila azulado
+            #2F80E4 -- azul
+            #6DA0E1 -- celeste
+            --
+            #EDABBE -- rosita fondo
+            #DE5C8F -- rosa botones
+            #7C4EBB -- violeta banner
+            #872d72 -- violeta vino
+            #FBF4EB -- card
+        */
         body {
             margin: 0;
             font-family: Consolas, sans-serif;
-            background-color: #EDEBDD;
+            background-color: #EEE2DF;
         }
 
         /* NAV STICKY */
         .nav-menu {
-            background-color: #AA0235;
+            background-color: #DE5C8F;
             padding: 1rem 2rem;
             border-radius: 1rem;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -30,8 +42,8 @@
 
         .nav-button {
             padding: 0.6rem 1.2rem;
-            background-color: white;
-            color: #AA0235;
+            background-color: #EEE2DF;
+            color: #DE5C8F;
             border: none;
             border-radius: 1rem;
             text-decoration: none;
@@ -42,23 +54,23 @@
         }
 
         .nav-button:hover {
-            background-color: #AA0235;
-            color: white;
+            background-color: #872d72;
+            color: #EEE2DF;
             cursor: pointer;
         }
 
         .logout {
-            background-color: #dc3545;
-            color: white;
+            background-color: #7C4EBB;
+            color: #EEE2DF;
         }
 
         .logout:hover {
-            background-color: #a71d2a;
+            background-color: #872d72;
         }
 
         .footer {
-            background-color: #AA0235;
-            color: white;
+            background-color: #DE5C8F;
+            color: #EEE2DF;
             text-align: center;
             padding: 1rem;
             margin-top: 4rem;
@@ -79,7 +91,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; @DateTime.Now.Year Maggieweb - Todos los derechos reservados</p>
+        <p>&copy; @DateTime.Now.Year Novetech - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
