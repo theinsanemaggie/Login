@@ -11,6 +11,10 @@ namespace LoginMVC.Controllers
         {
             return View();
         }
+        public IActionResult Create() // formulario alta
+        {
+            return View(); // vista con el formulario
+        }
 
         private readonly string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
 
