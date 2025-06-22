@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e239013bfef3f78d148fc0013acc3c218f8a748")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df880eebda45f74b5fd9ef8caaa6e04322d7efe7")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

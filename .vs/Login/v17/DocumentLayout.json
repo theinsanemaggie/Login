@@ -1,37 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\magal\\source\\repos\\Login\\",
+  "WorkspaceRootPath": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magal\\source\\repos\\Login\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\READ ME.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:READ ME.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magal\\source\\repos\\Login\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Animales\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magal\\source\\repos\\Login\\Views\\LogIn\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Animales\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Especie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Animales\\Especie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Estado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Animales\\Estado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Raza.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Animales\\Raza.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\List.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Animales\\List.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\AnimalesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\AnimalesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Tama\u00F1o.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Animales\\Tama\u00F1o.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Animales\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\LogIn\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\LogIn\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magal\\source\\repos\\Login\\Views\\LogIn\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\LogIn\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\LogIn\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magal\\source\\repos\\Login\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magal\\source\\repos\\Login\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Models\\AnimalModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\AnimalModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magal\\source\\repos\\Login\\Views\\Home\\Privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Home\\Privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Home\\Privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magal\\source\\repos\\Login\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,58 +90,153 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\magal\\source\\repos\\Login\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\magal\\source\\repos\\Login\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "DocumentIndex": 0,
+              "Title": "READ ME.txt",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\READ ME.txt",
+              "RelativeDocumentMoniker": "READ ME.txt",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\READ ME.txt",
+              "RelativeToolTip": "READ ME.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-22T19:37:05.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\List.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\List.cshtml",
+              "RelativeToolTip": "Views\\Animales\\List.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-15T18:14:02.845Z",
+              "WhenOpened": "2025-06-22T19:24:15.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Index.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Index.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACIAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T19:24:07.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Create.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Create.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T19:23:58.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tama\u00F1o.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Tama\u00F1o.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Tama\u00F1o.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Tama\u00F1o.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Tama\u00F1o.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T19:23:40.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnimalesController.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\AnimalesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimalesController.cs",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\AnimalesController.cs",
+              "RelativeToolTip": "Controllers\\AnimalesController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T19:06:58.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\magal\\source\\repos\\Login\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\magal\\source\\repos\\Login\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFoAAAAKAAAAAAAAAA==",
+              "Title": "Raza.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Raza.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Raza.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Raza.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Raza.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-15T18:12:06.105Z",
+              "WhenOpened": "2025-06-22T19:24:17.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Estado.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Estado.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Estado.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Estado.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Estado.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T19:24:03.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\magal\\source\\repos\\Login\\Views\\LogIn\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\LogIn\\Index.cshtml",
-              "ToolTip": "C:\\Users\\magal\\source\\repos\\Login\\Views\\LogIn\\Index.cshtml",
-              "RelativeToolTip": "Views\\LogIn\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Title": "Especie.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Especie.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Especie.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Especie.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Especie.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-15T17:24:19.024Z",
+              "WhenOpened": "2025-06-22T19:24:05.334Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Animales\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T19:23:55.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\magal\\source\\repos\\Login\\Views\\LogIn\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\LogIn\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\LogIn\\Login.cshtml",
-              "ToolTip": "C:\\Users\\magal\\source\\repos\\Login\\Views\\LogIn\\Login.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\LogIn\\Login.cshtml",
               "RelativeToolTip": "Views\\LogIn\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -102,11 +245,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\LogIn\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\LogIn\\Index.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\LogIn\\Index.cshtml",
+              "RelativeToolTip": "Views\\LogIn\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-15T17:24:19.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-15T18:14:02.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AnimalModel.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Models\\AnimalModel.cs",
+              "RelativeDocumentMoniker": "Models\\AnimalModel.cs",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Models\\AnimalModel.cs",
+              "RelativeToolTip": "Models\\AnimalModel.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T19:14:36.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T19:07:19.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-15T18:12:06.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\magal\\source\\repos\\Login\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\magal\\source\\repos\\Login\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -115,42 +322,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\magal\\source\\repos\\Login\\Controllers\\LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\magal\\source\\repos\\Login\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T17:19:09.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\magal\\source\\repos\\Login\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\magal\\source\\repos\\Login\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-15T18:36:43.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T18:36:43.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\magal\\source\\repos\\Login\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\magal\\source\\repos\\Login\\Program.cs",
+              "ToolTip": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T17:29:16.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T17:29:16.221Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

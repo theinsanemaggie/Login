@@ -3,12 +3,12 @@
     "",
     "\\Controllers",
     "\\Views",
+    "\\Views\\Animales",
     "\\Views\\Home",
     "\\Views\\LogIn",
     "\\Views\\Shared",
-    "\\wwwroot",
-    "\\wwwroot\\Images"
+    "\\wwwroot"
   ],
-  "SelectedNode": "\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\Controllers\\AnimalesController.cs",
   "PreviewInSolutionExplorer": false
 }

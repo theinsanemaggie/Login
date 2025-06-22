@@ -1666,23 +1666,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\magal\\.nuget\\packages\\": {},
+    "C:\\Users\\evely\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MisProyectos\\Login\\Login\\LoginMVC.csproj",
+      "projectUniqueName": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\LoginMVC.csproj",
       "projectName": "LoginMVC",
-      "projectPath": "C:\\MisProyectos\\Login\\Login\\LoginMVC.csproj",
-      "packagesPath": "C:\\Users\\magal\\.nuget\\packages\\",
-      "outputPath": "C:\\MisProyectos\\Login\\Login\\obj\\",
+      "projectPath": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\LoginMVC.csproj",
+      "packagesPath": "C:\\Users\\evely\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\evely\\Desktop\\Mis Proyectos\\Proyecto Grupal\\BddLogin\\Login\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\magal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\evely\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1709,7 +1709,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -1739,7 +1739,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
