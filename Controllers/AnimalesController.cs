@@ -4,7 +4,7 @@ namespace LoginMVC.Controllers
 {
     public class AnimalesController : Controller
     {
-        //un action result para cada vista
+        //un action result para cada vista//COMENTARIO MAY
         public IActionResult Index()
         {
             return View();
