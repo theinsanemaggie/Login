@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\MisProyectos\\Login\\Login\\",
+  "WorkspaceRootPath": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\mis proyectos\\programaci\u00F3nv\\login\\views\\animales\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\mis proyectos\\programaci\u00F3nv\\login\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\views\\user\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\user\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\mis proyectos\\programaci\u00F3nv\\login\\controllers\\animalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:controllers\\animalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\views\\animales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\mis proyectos\\programaci\u00F3nv\\login\\views\\animales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\mis proyectos\\programaci\u00F3nv\\login\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Views\\User\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\Edit.cshtml",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Views\\User\\Edit.cshtml",
-              "RelativeToolTip": "Views\\User\\Edit.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwFgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T15:51:03.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Views\\User\\Create.cshtml",
+              "DocumentMoniker": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Views\\User\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Create.cshtml",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Views\\User\\Create.cshtml",
+              "ToolTip": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Views\\User\\Create.cshtml",
               "RelativeToolTip": "Views\\User\\Create.cshtml",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAIgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T15:38:52.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Views\\Animales\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Animales\\Index.cshtml",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Views\\Animales\\Index.cshtml",
-              "RelativeToolTip": "Views\\Animales\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T06:41:04.982Z",
+              "WhenOpened": "2025-06-22T16:16:59.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Views\\User\\List.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\List.cshtml",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Views\\User\\List.cshtml",
-              "RelativeToolTip": "Views\\User\\List.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Title": "AnimalesController.cs",
+              "DocumentMoniker": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Controllers\\AnimalesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimalesController.cs",
+              "ToolTip": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Controllers\\AnimalesController.cs",
+              "RelativeToolTip": "Controllers\\AnimalesController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAWwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T15:54:14.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Views\\Animales\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Create.cshtml",
+              "ToolTip": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Views\\Animales\\Create.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Create.cshtml",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAgwKEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T01:06:45.189Z",
+              "WhenOpened": "2025-06-22T00:27:11.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAE0AAABMAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Views\\Animales\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Index.cshtml",
+              "ToolTip": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Views\\Animales\\Index.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T01:02:43.047Z",
+              "WhenOpened": "2025-06-22T01:12:04.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Mis Proyectos\\Programaci\u00F3nV\\Login\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAhwB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T15:54:16.093Z",
               "EditorCaption": ""
             }
           ]
