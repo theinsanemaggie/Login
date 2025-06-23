@@ -1,5 +1,107 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<LoginMVC.Models.AnimalRazaModel>
+
 @{
+    ViewData["Title"] = "Lista de Razas";
 }
+
+
+<style>
+    /* Paleta de colores personalizada */
+    .main-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+        font-family: Consolas, monospace;
+    }
+
+    .form-title {
+        text-align: center;
+        color: #DE5C8F;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #FBF4EB;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+        .custom-table th,
+        .custom-table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .custom-table th {
+            background-color: #DEC1DB;
+            color: #872d72;
+            font-weight: bold;
+        }
+
+        .custom-table tr:hover {
+            background-color: #EEE2DF;
+        }
+
+    .action-buttons {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .btn-custom {
+        background-color: #DE5C8F;
+        color: white;
+        padding: 0.4rem 1rem;
+        border: none;
+        border-radius: 0.8rem;
+        font-family: Consolas, monospace;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        display: inline-block;
+    }
+
+        .btn-custom:hover {
+            background-color: #872d72;
+        }
+
+    .btn-agregar {
+        margin-top: 1.5rem;
+        display: inline-block;
+
+</style>
+
+<div class="main-container">
+    <h2 class="form-title">Lista de Razas</h2>
+
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var raza in Model)
+            {
+                <tr>
+                    <td>@raza.idRaza</td>
+                    <td>@raza.descripcion</td>
+                    <td>
+                        <div class="action-buttons">
+                            <a href="/Animales/EditarRaza/@raza.idRaza" class="btn-custom">Editar</a>
+                            <a href="/Animales/EliminarRaza/@raza.idRaza" class="btn-custom" onclick="return confirm('¿Estás segura que querés eliminar esta raza?');">Eliminar</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a href="/Animales/CrearRaza" class="btn-custom btn-agregar">Agregar Nueva Raza</a>
+</div>

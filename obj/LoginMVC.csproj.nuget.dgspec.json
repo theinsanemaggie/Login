@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MisProyectos\\Login\\Login\\LoginMVC.csproj": {}
+    "C:\\Proyecto\\Codigo\\Login\\LoginMVC.csproj": {}
   },
   "projects": {
-    "C:\\MisProyectos\\Login\\Login\\LoginMVC.csproj": {
+    "C:\\Proyecto\\Codigo\\Login\\LoginMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MisProyectos\\Login\\Login\\LoginMVC.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Codigo\\Login\\LoginMVC.csproj",
         "projectName": "LoginMVC",
-        "projectPath": "C:\\MisProyectos\\Login\\Login\\LoginMVC.csproj",
-        "packagesPath": "C:\\Users\\magal\\.nuget\\packages\\",
-        "outputPath": "C:\\MisProyectos\\Login\\Login\\obj\\",
+        "projectPath": "C:\\Proyecto\\Codigo\\Login\\LoginMVC.csproj",
+        "packagesPath": "C:\\Users\\Danito\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Codigo\\Login\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\magal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Danito\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
