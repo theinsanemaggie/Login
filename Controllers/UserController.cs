@@ -16,7 +16,7 @@ namespace LoginMVC.Controllers
             return View(); // vista con el formulario
         }
 
-        private readonly string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
+        private readonly string connectionString = @"Server=DESKTOP-JO06JGK;Database=LogInUser;User Id=sa;Password=tiger;TrustServerCertificate=True;";
 
         //lista copiada del profe -- corregida, no tocar
         public ActionResult List()
@@ -65,7 +65,7 @@ namespace LoginMVC.Controllers
         //código "for method" revisado y corregido, no tocar
         public ActionResult ForMethod(string username, string password, string email, string name, string lastname, DateTime birthday)
         {
-            string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
+            string connectionString = @"Server=DESKTOP-JO06JGK;Database=LogInUser;User Id=sa;Password=tiger;TrustServerCertificate=True;";
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))

@@ -1,5 +1,123 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model List<LoginMVC.Models.AnimalModel>
+
+<h2 class="titulo-listado">Listado de Animales</h2>
+
+<table class="animal-table">
+    <thead>
+        <tr>
+            <th>ID Animal</th>
+            <th>Nombre</th>
+            <th>Especie</th>
+            <th>Tamaño</th>
+            <th>Raza</th>
+            <th>Edad</th>
+            <th>Estado</th>
+            <th>Fecha de Ingreso</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var animal in Model)
+        {
+            <tr>
+                <td>@animal.idAnimal</td>
+                <td>@animal.nombre</td>
+                <td>@animal.especie</td>
+                <td>@animal.tamaño</td>
+                <td>@animal.raza</td>
+                <td>@animal.edad</td>
+                <td>@animal.estado</td>
+                <td>@animal.fechaIngreso.ToString("yyyy-MM-dd")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@animal.idAnimal" class="btn btn-sm btn-primary">Editar</a>
+                    <form asp-action="Delete" method="post" asp-route-id="@animal.idAnimal" style="display:inline;" onsubmit="return confirm('¿Estás segura que querés eliminar este animal?');">
+                        <button type="submit" class="btn btn-sm btn-primary">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    /* Paleta de colores
+            #EEE2DF -- cremita
+            #DEC1DB -- rosa bebé
+            #5B61B2 -- lila azulado
+            #2F80E4 -- azul
+            #6DA0E1 -- celeste
+            --
+            #EDABBE -- rosita fondo
+            #DE5C8F -- rosa botones
+            #7C4EBB -- violeta banner
+            #872d72 -- violeta vino
+            #FBF4EB -- CARD
+        */
+    .titulo-listado {
+        text-align: center;
+        color: #DE5C8F;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .animal-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        background-color: #FBF4EB;
+        margin: auto;
+        font-family: Consolas, sans-serif;
+        font-size: 0.95rem;
+    }
+
+        .animal-table thead {
+            background-color: #DE5C8F;
+            color: #FBF4EB;
+        }
+
+            .animal-table thead tr:hover {
+                background-color: #DE5C8F !important;
+                color: #FBF4EB !important;
+            }
+
+        .animal-table th,
+        .animal-table td {
+            padding: 0.75rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .user-table tbody tr:hover {
+            background-color: #f3f3f3;
+        }
+
+    .btn {
+        font-family: Consolas, sans-serif;
+        padding: 0.3rem 0.6rem;
+        border: none;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn-primary {
+        background-color: #DE5C8F;
+    }
+
+        .btn-primary:hover {
+            background-color: #7C4EBB;
+        }
+
+    .btn-danger {
+        background-color: #7C4EBB;
+    }
+
+        .btn-danger:hover {
+            background-color: #872d72;
+        }
+
+</style>
