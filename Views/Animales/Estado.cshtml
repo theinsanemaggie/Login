@@ -1,11 +1,14 @@
-<<<<<<< HEAD
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+@model List<LoginMVC.Models.AnimalEstadoModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p class="mensaje-vacio">No hay estados cargados.</p>
 }
-=======
-﻿@model List<LoginMVC.Models.AnimalEstadoModel>
+else
+{
+    <p class="mensaje-cantidad">Cantidad de estados: @Model.Count</p>
+}
+
 <style> 
     .main-container {
         max-width: 1000px;
@@ -19,6 +22,22 @@
         color: #DE5C8F;
         font-size: 2rem;
         margin-bottom: 1.5rem;
+    }
+
+    .mensaje-vacio {
+        text-align: center;
+        color: #999;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        font-family: Consolas, monospace;
+    }
+
+    .mensaje-cantidad {
+        text-align: center;
+        color: #888;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        font-family: Consolas, monospace;
     }
 
     .custom-table {
@@ -104,10 +123,3 @@
 
     <a href="/Animales/AgregarEstado" class="btn-custom btn-agregar">Agregar Estado</a>
 </div>
-
-
-
-
-
-
->>>>>>> origin/Rocio

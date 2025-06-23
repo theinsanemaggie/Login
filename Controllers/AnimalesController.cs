@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
 ﻿using LoginMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
@@ -7,13 +7,13 @@ using System.IO;
 using System.Data;
 using Microsoft.AspNetCore.Authorization;
 using static System.Net.Mime.MediaTypeNames;
-=======
+//=======
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Data.SqlClient;
 using Microsoft.AspNetCore.Hosting.Server;
 using LoginMVC.Models;
->>>>>>> origin/Rocio
+// origin/Rocio
 
 namespace LoginMVC.Controllers
 {
@@ -100,7 +100,7 @@ namespace LoginMVC.Controllers
 
 
         //Conexión a BDD Rochi
-        string connectionString = @"Server=RocioBalent;Database=LogInUser;Integrated Security=True;TrustServerCertificate=True;";
+        //string connectionString = @"Server=RocioBalent;Database=LogInUser;Integrated Security=True;TrustServerCertificate=True;";
         public IActionResult Estado()
         {
             //AnimalEstadoModel es el nombre del modelo
@@ -214,8 +214,6 @@ namespace LoginMVC.Controllers
 
             return View(estadoEditado);
         }
-
-
 
         public IActionResult List()
         {
