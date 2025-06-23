@@ -1,22 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\MisProyectos\\Login\\Login\\",
+  "WorkspaceRootPath": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\controllers\\animalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\users\\atila\\documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\programacion 5\\progamacion-tp\\login\\views\\animales\\editarespecie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\editarespecie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\users\\atila\\documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\programacion 5\\progamacion-tp\\login\\views\\animales\\listarespecies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\listarespecies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\users\\atila\\documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\programacion 5\\progamacion-tp\\login\\controllers\\animalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:controllers\\animalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\users\\atila\\documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\programacion 5\\progamacion-tp\\login\\views\\animales\\especie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\especie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\models\\animalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\users\\atila\\documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\programacion 5\\progamacion-tp\\login\\views\\animales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\users\\atila\\documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\programacion 5\\progamacion-tp\\login\\models\\animalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:models\\animalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\users\\atila\\documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\programacion 5\\progamacion-tp\\login\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +38,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T15:54:16.093Z",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\Animales\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\Animales\\Index.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T20:10:15.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "AnimalModel.cs",
+              "DocumentMoniker": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Models\\AnimalModel.cs",
+              "RelativeDocumentMoniker": "Models\\AnimalModel.cs",
+              "ToolTip": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Models\\AnimalModel.cs",
+              "RelativeToolTip": "Models\\AnimalModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T18:47:53.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AnimalesController.cs",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Controllers\\AnimalesController.cs",
+              "DocumentMoniker": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Controllers\\AnimalesController.cs",
               "RelativeDocumentMoniker": "Controllers\\AnimalesController.cs",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Controllers\\AnimalesController.cs",
+              "ToolTip": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Controllers\\AnimalesController.cs",
               "RelativeToolTip": "Controllers\\AnimalesController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvzgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T15:54:14.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnimalModel.cs",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Models\\AnimalModel.cs",
-              "RelativeDocumentMoniker": "Models\\AnimalModel.cs",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Models\\AnimalModel.cs",
-              "RelativeToolTip": "Models\\AnimalModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T15:53:57.638Z",
+              "DocumentIndex": 3,
+              "Title": "Especie.cshtml",
+              "DocumentMoniker": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\Animales\\Especie.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Especie.cshtml",
+              "ToolTip": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\Animales\\Especie.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Especie.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T18:45:59.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "Models\\UserModel.cs",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Models\\UserModel.cs",
-              "RelativeToolTip": "Models\\UserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T15:53:54.312Z",
+              "Title": "ListarEspecies.cshtml",
+              "DocumentMoniker": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\Animales\\ListarEspecies.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\ListarEspecies.cshtml",
+              "ToolTip": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\Animales\\ListarEspecies.cshtml",
+              "RelativeToolTip": "Views\\Animales\\ListarEspecies.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:36:48.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditarEspecie.cshtml",
+              "DocumentMoniker": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\Animales\\EditarEspecie.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\EditarEspecie.cshtml",
+              "ToolTip": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\Animales\\EditarEspecie.cshtml",
+              "RelativeToolTip": "Views\\Animales\\EditarEspecie.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T18:08:36.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Atila\\Documents\\pri facu\\3\u00BA a\u00F1o - 1\u00BA cuatri\\Programacion 5\\Progamacion-tp\\Login\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "Views\\User\\Create.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAIgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T18:58:56.089Z",
               "EditorCaption": ""
             }
           ]

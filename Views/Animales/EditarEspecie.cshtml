@@ -1,34 +1,20 @@
-﻿<!-- PRII -->
-@model LoginMVC.Models.AnimalEspecieModel
-
+﻿@model LoginMVC.Models.AnimalEspecieModel
 
 
 <div class="main-container">
-    <h1 class="form-title">Alta de Especie</h1>
+    <h1 class="form-title">Editar Especie</h1>
 
-    <form asp-controller="Animales" asp-action="Especie" method="post" class="user-form">
+    <form asp-controller="Animales" asp-action="EditarEspecie" method="post" class="user-form">
+        <input type="hidden" asp-for="idEspecie" />
         <div class="form-group">
             <label>Nombre de la especie:</label>
             <input asp-for="descripcion" class="form-control" />
             <span asp-validation-for="descripcion" class="text-danger"></span>
         </div>
 
-        <button type="submit" class="btn-submit">Guardar especie</button>
+        <button type="submit" class="btn-submit">Guardar cambios</button>
+        <a asp-action="ListarEspecies" class="btn-submit" style="background-color: #6DA0E1;">Volver al listado</a>
     </form>
-
-    @if (ViewBag.Message != null)
-    {
-        <div style="color: green; font-weight: bold;">
-            @ViewBag.Message
-        </div>
-    }
-
-    @if (ViewBag.Error != null)
-    {
-        <div style="color: red; font-weight: bold;">
-            @ViewBag.Error
-        </div>
-    }
 </div>
 
 <style>
@@ -91,11 +77,12 @@
         border-radius: 1rem;
         cursor: pointer;
         align-self: center;
+        text-decoration: none;
         transition: background-color 0.3s;
+        text-align: center;
     }
 
         .btn-submit:hover {
             background-color: #872d72;
         }
 </style>
-

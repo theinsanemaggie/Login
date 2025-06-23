@@ -1,0 +1,95 @@
+﻿@model List<LoginMVC.Models.AnimalEspecieModel>
+
+
+<div class="main-container">
+    <h1 class="form-title">Listado de Especies</h1>
+
+    <a asp-controller="Animales" asp-action="Especie" class="btn-submit">Agregar nueva especie</a>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var especie in Model)
+            {
+                <tr>
+                    <td>@especie.idEspecie</td>
+                    <td>@especie.descripcion</td>
+                    <td>
+                        <a asp-controller="Animales" asp-action="EditarEspecie" asp-route-id="@especie.idEspecie" class="btn-submit">Editar</a>
+                        <a asp-controller="Animales" asp-action="EliminarEspecie" asp-route-id="@especie.idEspecie" class="btn-submit" style="background-color: #ff4d4d;">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .main-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+        font-family: Consolas, monospace;
+    }
+
+    .form-title {
+        text-align: center;
+        color: #DE5C8F;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-submit {
+        background-color: #DE5C8F;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 0.5rem;
+        display: inline-block;
+        transition: background-color 0.3s;
+    }
+
+    .btn-submit:hover {
+        background-color: #872d72;
+    }
+
+    .styled-table {
+        border-collapse: collapse;
+        margin: 1rem auto;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        width: 100%;
+        background-color: #FBF4EB;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .styled-table thead {
+        background-color: #DE5C8F;
+        color: white;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .styled-table tbody tr:nth-child(even) {
+        background-color: #EEE2DF;
+    }
+</style>
+
+
