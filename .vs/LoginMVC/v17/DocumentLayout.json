@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\MisProyectos\\Login\\Login\\",
+  "WorkspaceRootPath": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\controllers\\animalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\programaci\u00F3n\\progrmaci\u00F3n v\\codigosr\\login\\controllers\\animalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:controllers\\animalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\programaci\u00F3n\\progrmaci\u00F3n v\\codigosr\\login\\views\\animales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\models\\animalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\programaci\u00F3n\\progrmaci\u00F3n v\\codigosr\\login\\models\\animalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:models\\animalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\misproyectos\\login\\login\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\programaci\u00F3n\\progrmaci\u00F3n v\\codigosr\\login\\views\\animales\\agregarestado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\agregarestado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\programaci\u00F3n\\progrmaci\u00F3n v\\codigosr\\login\\views\\animales\\editarestado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\editarestado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|c:\\programaci\u00F3n\\progrmaci\u00F3n v\\codigosr\\login\\views\\animales\\estado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26242765-F30F-43DC-92E5-5B4BE7DC6D48}|LoginMVC.csproj|solutionrelative:views\\animales\\estado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T15:54:16.093Z",
+              "DocumentIndex": 5,
+              "Title": "Estado.cshtml",
+              "DocumentMoniker": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Views\\Animales\\Estado.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Estado.cshtml",
+              "ToolTip": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Views\\Animales\\Estado.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Estado.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAuwCkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T23:29:48.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditarEstado.cshtml",
+              "DocumentMoniker": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Views\\Animales\\EditarEstado.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\EditarEstado.cshtml",
+              "ToolTip": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Views\\Animales\\EditarEstado.cshtml",
+              "RelativeToolTip": "Views\\Animales\\EditarEstado.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T23:41:59.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AnimalesController.cs",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Controllers\\AnimalesController.cs",
+              "DocumentMoniker": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Controllers\\AnimalesController.cs",
               "RelativeDocumentMoniker": "Controllers\\AnimalesController.cs",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Controllers\\AnimalesController.cs",
+              "ToolTip": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Controllers\\AnimalesController.cs",
               "RelativeToolTip": "Controllers\\AnimalesController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswC4AAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T15:54:14.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnimalModel.cs",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Models\\AnimalModel.cs",
-              "RelativeDocumentMoniker": "Models\\AnimalModel.cs",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Models\\AnimalModel.cs",
-              "RelativeToolTip": "Models\\AnimalModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T15:53:57.638Z",
+              "DocumentIndex": 3,
+              "Title": "AgregarEstado.cshtml",
+              "DocumentMoniker": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Views\\Animales\\AgregarEstado.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\AgregarEstado.cshtml",
+              "ToolTip": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Views\\Animales\\AgregarEstado.cshtml",
+              "RelativeToolTip": "Views\\Animales\\AgregarEstado.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T13:28:25.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\MisProyectos\\Login\\Login\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "Models\\UserModel.cs",
-              "ToolTip": "C:\\MisProyectos\\Login\\Login\\Models\\UserModel.cs",
-              "RelativeToolTip": "Models\\UserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Views\\Animales\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animales\\Index.cshtml",
+              "ToolTip": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Views\\Animales\\Index.cshtml",
+              "RelativeToolTip": "Views\\Animales\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T23:59:49.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimalModel.cs",
+              "DocumentMoniker": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Models\\AnimalModel.cs",
+              "RelativeDocumentMoniker": "Models\\AnimalModel.cs",
+              "ToolTip": "C:\\Programaci\u00F3n\\Progrmaci\u00F3n V\\CodigoSR\\Login\\Models\\AnimalModel.cs",
+              "RelativeToolTip": "Models\\AnimalModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T15:53:54.312Z",
+              "WhenOpened": "2025-06-21T15:53:57.638Z",
               "EditorCaption": ""
             }
           ]
