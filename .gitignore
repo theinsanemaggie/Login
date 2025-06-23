@@ -20,3 +20,6 @@ obj/
 *.dll
 *.cache
 *.v2
+.vs/
+bin/
+obj/

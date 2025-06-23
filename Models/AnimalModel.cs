@@ -17,9 +17,15 @@ namespace LoginMVC.Models
     public class AnimalEspecieModel
     {
     }
+<<<<<<< HEAD
     public class AnimalEstadolModel
     {
         public int IdEstado { get; set; }
+=======
+    public class AnimalEstadoModel
+    {
+        public int idEstado { get; set; }
+>>>>>>> origin/Rocio
         public string descripcion { get; set; }
     }
     public class AnimalRazaModel
