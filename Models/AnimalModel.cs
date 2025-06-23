@@ -8,7 +8,7 @@ namespace LoginMVC.Models
         public string nombre { get; set; }
         public int idEspecie { get; set; }
         public int idTamaño { get; set; }
-        public ImageFileMachine imagen { get; set; }
+        public IFormFile imagen { get; set; }
         public int idRaza { get; set; }
         public int edad { get; set; }
         public int idEstado { get; set; }
@@ -17,8 +17,10 @@ namespace LoginMVC.Models
     public class AnimalEspecieModel
     {
     }
-    public class AnimaEstadolModel
+    public class AnimalEstadolModel
     {
+        public int IdEstado { get; set; }
+        public string descripcion { get; set; }
     }
     public class AnimalRazaModel
     {

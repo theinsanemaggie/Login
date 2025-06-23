@@ -9,3 +9,14 @@ obj/
 *.dll
 *.cache
 *.v2
+
+.vs/
+obin/
+obj/
+*.user
+*.suo
+*.pdb
+*.exe
+*.dll
+*.cache
+*.v2
