@@ -17,7 +17,7 @@ namespace LoginMVC.Controllers
         {
             return View();
         }
-        string connectionString = "Server=CARLA;Database=LogInUser;User Id=sa;Password=1612;Trusted_Connection=True;TrustServerCertificate=True;";
+        string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
 
         public IActionResult Create()
         {
@@ -58,6 +58,7 @@ namespace LoginMVC.Controllers
 
                     connection.Open();
                     int rowsAffected = command.ExecuteNonQuery();
+                    connection.Close(); //agregado
 
                     if (rowsAffected > 0)
                     {
@@ -73,8 +74,6 @@ namespace LoginMVC.Controllers
             {
                 ViewBag.Error = "Error al insertar el animal " + nombre + ": " + ex.Message;
             }
-
-
 
             return View();
         }
