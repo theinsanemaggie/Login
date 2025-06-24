@@ -16,15 +16,21 @@ namespace LoginMVC.Models
     }
     public class AnimalEspecieModel
     {
+
     }
-    public class AnimaEstadolModel
+
+    public class AnimalEstadoModel
     {
+
     }
+
     public class AnimalRazaModel
     {
+
     }
+
     public class AnimalTamañoModel
     {
+
     }
-  
 }

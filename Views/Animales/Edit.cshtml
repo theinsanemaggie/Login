@@ -1,5 +1,127 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model LoginMVC.Models.AnimalModel
+
+<h2 class="form-title">Editar Animal</h2>
+
+<form asp-action="Edit" method="post" class="user-form">
+    <input type="hidden" asp-for="idAnimal" />
+
+    <div class="form-group">
+        <label>Nombre:</label>
+        <input asp-for="nombre" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Edad:</label>
+        <input asp-for="edad" type="number" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Fecha de ingreso:</label>
+        <input asp-for="fechaIngreso" type="date" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Especie:</label>
+        <select asp-for="idEspecie" class="form-control" asp-items="ViewBag.Especies"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Tamaño:</label>
+        <select asp-for="idTamaño" class="form-control" asp-items="ViewBag.Tamaños"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Raza:</label>
+        <select asp-for="idRaza" class="form-control" asp-items="ViewBag.Razas"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Estado:</label>
+        <select asp-for="idEstado" class="form-control" asp-items="ViewBag.Estados"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+</form>
+
+
+<style>
+    /* Paleta de colores
+                        #EEE2DF -- cremita
+                        #DEC1DB -- rosa bebé
+                        #5B61B2 -- lila azulado
+                        #2F80E4 -- azul
+                        #6DA0E1 -- celeste
+                        --
+                        #EDABBE -- rosita fondo
+                        #DE5C8F -- rosa botones
+                        #7C4EBB -- violeta banner
+                        #872d72 -- violeta vino
+                        #FBF4EB -- card
+                    */
+    .main-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+        font-family: Consolas, monospace;
+    }
+
+    .form-title {
+        text-align: center;
+        color: #DE5C8F;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .user-form {
+        background-color: #FBF4EB;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            color: #DE5C8F;
+        }
+
+    .form-control {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+        font-family: Consolas, monospace;
+        font-size: 1rem;
+        background-color: #EEE2DF;
+        background-color: #EEE2DF;
+    }
+
+    .btn-submit {
+        background-color: #DE5C8F;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        align-self: center;
+        transition: background-color 0.3s;
+    }
+
+        .btn-submit:hover {
+            background-color: #872d72;
+        }
+</style>
