@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 
 namespace LoginMVC.Models
 {
@@ -20,8 +21,13 @@ namespace LoginMVC.Models
         public string raza { get; set; }
         public string estado { get; set; }
     }
-    public class AnimalEspecieModel
+    public class AnimalEspecieModel //PRII
     {
+        public int idEspecie { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar una descripción.")]
+        public string descripcion { get; set; }
+
     }
     public class AnimalEstadoModel
     {

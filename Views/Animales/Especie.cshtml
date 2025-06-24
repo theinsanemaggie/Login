@@ -1,5 +1,98 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿﻿<!-- PRII -->
+@model LoginMVC.Models.AnimalEspecieModel
+
+<div class="main-container">
+    <h1 class="form-title">Alta de Especie</h1>
+
+    <form asp-controller="Animales" asp-action="Especie" method="post" class="user-form">
+        <div class="form-group">
+            <label>Nombre de la especie:</label>
+            <input asp-for="descripcion" class="form-control" />
+            <span asp-validation-for="descripcion" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">Guardar especie</button>
+    </form>
+
+    @if (ViewBag.Message != null)
+    {
+        <div style="color: green; font-weight: bold;">
+            @ViewBag.Message
+        </div>
+    }
+
+    @if (ViewBag.Error != null)
+    {
+        <div style="color: red; font-weight: bold;">
+            @ViewBag.Error
+        </div>
+    }
+</div>
+
+<style>
+    .main-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+        font-family: Consolas, monospace;
+    }
+
+    .form-title {
+        text-align: center;
+        color: #DE5C8F;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .user-form {
+        background-color: #FBF4EB;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            color: #DE5C8F;
+        }
+
+    .form-control {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+        font-family: Consolas, monospace;
+        font-size: 1rem;
+        background-color: #EEE2DF;
+    }
+
+    .btn-submit {
+        background-color: #DE5C8F;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        align-self: center;
+        transition: background-color 0.3s;
+    }
+
+        .btn-submit:hover {
+            background-color: #872d72;
+        }
+</style>
