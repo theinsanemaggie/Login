@@ -1,25 +1,39 @@
-
+# Visual Studio
 .vs/
-obin/
-obj/
-*.user
 *.suo
-*.pdb
-*.exe
-*.dll
-*.cache
-*.v2
-
-.vs/
-obin/
-obj/
 *.user
-*.suo
-*.pdb
-*.exe
-*.dll
-*.cache
-*.v2
-.vs/
+*.userosscache
+*.sln.docstates
+
+# Build results
 bin/
 obj/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs
+*.log
+
+# Rider
+.idea/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Others
+*.cache
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
