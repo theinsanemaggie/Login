@@ -1,22 +1,9 @@
-//<<<<<<< HEAD
-﻿using LoginMVC.Models;
 using LoginMVC.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Components.Forms;
-using Microsoft.AspNetCore.Hosting.Server;
-using Microsoft.AspNetCore.Http;
-//=======
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
-using Microsoft.Data.SqlClient;
-using System;
 using System.Data;
-using System.IO;
-using System.Linq.Expressions;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Net.WebRequestMethods;
+
 // origin/Rocio
 
 namespace LoginMVC.Controllers
@@ -36,14 +23,15 @@ namespace LoginMVC.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<ActionResult> Create(string nombre, string idEspecie, string idTamaño, IFormFile imagen, string idRaza, string edad, string idEstado, string fechaIngreso)
+        public async Task<ActionResult> Create(string nombre, string idEspecie, string idTamaño,  string idRaza, string edad, string idEstado, string fechaIngreso)
         {
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    string query = "INSERT INTO Animal(nombre, idEspecie, idTamaño, imagen, idRaza, edad, idEstado, fechaIngreso)" +
-                        "VALUES (@nombre, @idEspecie, @idTamaño, @imagen, @idRaza, @edad, @idEstado, @fechaIngreso) ";
+                    //saque imagen
+                    string query = "INSERT INTO Animal(nombre, idEspecie, idTamaño, idRaza, edad, idEstado, fechaIngreso)" +
+                        "VALUES (@nombre, @idEspecie, @idTamaño, @idRaza, @edad, @idEstado, @fechaIngreso) ";
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@nombre", nombre);
                     command.Parameters.AddWithValue("@idEspecie", idEspecie);
@@ -54,6 +42,9 @@ namespace LoginMVC.Controllers
                     command.Parameters.AddWithValue("@fechaIngreso", fechaIngreso);
 
                     // Convertir la imagen a byte[] si fue subida
+
+                    /*
+                     
                     if (imagen != null && imagen.Length > 0)
                     {
                         using (var ms = new MemoryStream())
@@ -67,6 +58,7 @@ namespace LoginMVC.Controllers
                     {
                         command.Parameters.Add("@imagen", SqlDbType.VarBinary).Value = DBNull.Value;
                     }
+                     */
 
                     connection.Open();
                     int rowsAffected = command.ExecuteNonQuery();
@@ -93,6 +85,70 @@ namespace LoginMVC.Controllers
         public IActionResult Edit()
         {
             return View();
+        }
+
+        public IActionResult Editar(AnimalModel Animal)
+        {
+            using SqlConnection connection = new SqlConnection(connectionString);
+            {
+                string query = @"UPDATE Animal SET
+                                nombre = @nombre,
+                                idEspecie = @idEspecie,
+                                idTamaño = @idTamaño,
+                                idRaza = @idRaza,   
+                                edad = @edad,
+                                idEstado = @idEstado,
+                                fechaIngreso = @fechaIngreso
+                                WHERE idAnimal = @idAnimal";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@nombre", Animal.nombre);
+                command.Parameters.AddWithValue("@idEspecie", Animal.idEspecie);
+                command.Parameters.AddWithValue("@idTamaño", Animal.idTamaño);
+                command.Parameters.AddWithValue("@idRaza", Animal.idRaza);
+                command.Parameters.AddWithValue("@edad", Animal.edad);
+                command.Parameters.AddWithValue("@idEstado", Animal.idEstado);
+                command.Parameters.AddWithValue("@fechaIngreso", Animal.fechaIngreso);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+
+
+                return RedirectToAction("Lista");
+            }
+        }
+
+        //y este se encarga de ir a bucar los datos del usuario específico
+        //Para mostrar los datos y permitirme en el front modificarlos
+
+        public IActionResult Editar(int id)
+        {
+            AnimalModel Animal = new AnimalModel();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT idAnimal, nombre, idEspecie, idTamaño, idRaza, edad, idEstado, fechaIngreso from Animal where id = " + id.ToString();
+
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Animal.idAnimal = Convert.ToInt32(reader["idAnimal"]);
+                    Animal.nombre = reader["nombre"].ToString();
+                    Animal.idEspecie = Convert.ToInt32(reader["idEspecie"]);
+                    Animal.idTamaño = Convert.ToInt32(reader["idTamaño"]);
+                    Animal.idRaza = Convert.ToInt32(reader["idRaza"]);
+                    Animal.edad = Convert.ToInt32(reader["edad"]);
+                    Animal.idEstado = Convert.ToInt32(reader["idEstado"]);
+                    Animal.fechaIngreso = Convert.ToDateTime(reader["fechaIngreso"]);
+
+                }
+
+                return View(Animal);
+
+            }
         }
         public IActionResult Delete()
         {
