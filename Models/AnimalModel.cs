@@ -13,6 +13,12 @@ namespace LoginMVC.Models
         public int edad { get; set; }
         public int idEstado { get; set; }
         public DateTime fechaIngreso { get; set; }
+
+        /*se agregan para que en ligar de leer el ID lea la descricón */
+        public string especie { get; set; }
+        public string tamaño { get; set; }
+        public string raza { get; set; }
+        public string estado { get; set; }
     }
     public class AnimalEspecieModel
     {

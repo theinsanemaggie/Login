@@ -6,14 +6,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 //=======
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Data;
 using System.IO;
+using System.Linq.Expressions;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Net.WebRequestMethods;
 // origin/Rocio
@@ -226,9 +227,76 @@ namespace LoginMVC.Controllers
 
         public IActionResult List()
         {
-            return View();
-        }
 
+            List<AnimalModel> animales = new List<AnimalModel>();
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    /*para que no traiga el ID sino la descricón comento esta linea*/
+                    /*string query = "SELECT idAnimal, nombre, idEspecie, idTamaño, imagen, idRaza, edad, idEstado, fechaIngreso FROM Animal";*/
+                    string query = @"
+                                    SELECT 
+                                        a.idAnimal, 
+                                        a.nombre, 
+                                        e.descripcion AS especie,
+                                        t.descripcion AS tamaño,
+                                        r.descripcion AS raza,
+                                        a.edad,
+                                        es.descripcion AS estado,
+                                        a.fechaIngreso
+                                    FROM Animal a
+                                    JOIN Especie e ON a.idEspecie = e.idEspecie
+                                    JOIN Tamaño t ON a.idTamaño = t.idTamaño
+                                    JOIN Raza r ON a.idRaza = r.idRaza
+                                    JOIN Estado es ON a.idEstado = es.idEstado";
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+
+                    while (reader.Read())
+                    {
+                        /*AnimalModel animal = new AnimalModel --SE REEMPLAZA PARA QUE LEA LA DESCRIPCIÓN Y NO EL ID
+                        {
+                            idAnimal = Convert.ToInt32(reader["idAnimal"]),
+                            nombre = reader["nombre"].ToString(),
+                            idEspecie = Convert.ToInt32(reader["idEspecie"]),
+                            idTamaño = Convert.ToInt32(reader["idTamaño"]),
+                            imagen = reader["imagen"] == DBNull.Value ? null : (byte[])reader["imagen"],
+                            idRaza = Convert.ToInt32(reader["idRaza"]),
+                            edad = Convert.ToInt32(reader["edad"]),
+                            idEstado = Convert.ToInt32(reader["idEstado"]),
+                            fechaIngreso = Convert.ToDateTime(reader["fechaIngreso"])*/
+
+                        AnimalModel animal = new AnimalModel
+                        {
+                            idAnimal = Convert.ToInt32(reader["idAnimal"]),
+                            nombre = reader["nombre"].ToString(),
+                            especie = reader["especie"].ToString(),
+                            tamaño = reader["tamaño"].ToString(),
+                            raza = reader["raza"].ToString(),
+                            edad = Convert.ToInt32(reader["edad"]),
+                            estado = reader["estado"].ToString(),
+                            fechaIngreso = Convert.ToDateTime(reader["fechaIngreso"])
+                        };
+
+                        animales.Add(animal);
+                    }
+
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error al obtener los animales: " + ex.Message;
+            }
+
+            return View(animales);
+        }
+        
         public IActionResult Raza()
         {
             //string connectionString = "Server=DESKTOP-TBEAQV2;Database=LogInUser;Trusted_Connection=True;TrustServerCertificate=True;";
