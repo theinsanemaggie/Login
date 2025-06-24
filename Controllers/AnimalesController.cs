@@ -23,7 +23,7 @@ namespace LoginMVC.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<ActionResult> Create(string nombre, string idEspecie, string idTamaño,  string idRaza, string edad, string idEstado, string fechaIngreso)
+        public async Task<ActionResult> Create(string nombre, string idEspecie, string idTamaño, string idRaza, string edad, string idEstado, string fechaIngreso)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace LoginMVC.Controllers
 
                     connection.Open();
                     int rowsAffected = command.ExecuteNonQuery();
-                    
+
 
                     if (rowsAffected > 0)
                     {
@@ -154,11 +154,35 @@ namespace LoginMVC.Controllers
         {
             return View();
         }
-   
-        //-----------------------------------------------------------------
-        public static List<AnimalEspecieModel> listaEspecies = new List<AnimalEspecieModel>();
+
+        //------------------------------------------------------------------------------------------------------------------
+        //public static List<AnimalEspecieModel> listaEspecies = new List<AnimalEspecieModel>();
+        // GET para mostrar el formulario de agregar especie
+        [HttpGet]
+        public IActionResult Especie()
+        {
+            return View();
+        }
         public IActionResult Especie(AnimalEspecieModel especie) //PRII 
         {
+            if (ModelState.IsValid)
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "INSERT INTO Especie (descripcion) VALUES (@descripcion)";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@descripcion", especie.descripcion);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
+
+                return RedirectToAction("ListarEspecies");
+            }
+
+            return View(especie);
+            /*
+             
             if (ModelState.IsValid)
             {
                 especie.idEspecie = listaEspecies.Count + 1;
@@ -169,45 +193,117 @@ namespace LoginMVC.Controllers
 
             // Si hay errores de validación, vuelve al formulario
             return View(especie);
+             */
         }
         public IActionResult ListarEspecies()
         {
-            return View(listaEspecies);
+            List<AnimalEspecieModel> especies = new List<AnimalEspecieModel>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT idEspecie, descripcion FROM Especie";
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    especies.Add(new AnimalEspecieModel
+                    {
+                        idEspecie = Convert.ToInt32(reader["idEspecie"]),
+                        descripcion = reader["descripcion"].ToString()
+                    });
+                }
+
+                connection.Close();
+            }
+            return View(especies);
         }
+        [HttpGet]
         [HttpGet]
         public IActionResult EditarEspecie(int id)
         {
-            var especie = listaEspecies.FirstOrDefault(e => e.idEspecie == id);
-            if (especie == null)
+            AnimalEspecieModel especie = new AnimalEspecieModel();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                return NotFound();
+                string query = "SELECT idEspecie, descripcion FROM Especie WHERE idEspecie = @id";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    especie.idEspecie = Convert.ToInt32(reader["idEspecie"]);
+                    especie.descripcion = reader["descripcion"].ToString();
+                }
+                connection.Close();
             }
 
-            return View(especie); // Esto manda los datos al formulario
+            return View(especie);
         }
 
+
+        /*
+
+        var especie = listaEspecies.FirstOrDefault(e => e.idEspecie == id);
+        if (especie == null)
+        {
+            return NotFound();
+        }
+
+        return View(especie); // Esto manda los datos al formulario
+         */
+
+        [HttpPost]
         [HttpPost]
         public IActionResult EditarEspecie(AnimalEspecieModel especie)
         {
-            var existente = listaEspecies.FirstOrDefault(e => e.idEspecie == especie.idEspecie);
-            if (existente != null)
+            if (ModelState.IsValid)
             {
-                existente.descripcion = especie.descripcion;
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "UPDATE Especie SET descripcion = @descripcion WHERE idEspecie = @id";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@descripcion", especie.descripcion);
+                    command.Parameters.AddWithValue("@id", especie.idEspecie);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
+
                 return RedirectToAction("ListarEspecies");
             }
 
             return View(especie);
         }
+
         public IActionResult EliminarEspecie(int id)
         {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "DELETE FROM Especie WHERE idEspecie = @id";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            /*
             var especie = listaEspecies.FirstOrDefault(e => e.idEspecie == id);
             if (especie != null)
             {
                 listaEspecies.Remove(especie);
             }
+             */
 
             return RedirectToAction("ListarEspecies");
         }
+
+        [HttpGet]
         //-----------------------------------------------------------------
 
         //Conexión a BDD Rochi
@@ -238,6 +334,8 @@ namespace LoginMVC.Controllers
             }
             return View(estados);
         }
+
+
 
         // Mostrar formulario para agregar estado
         [HttpGet]
@@ -295,7 +393,6 @@ namespace LoginMVC.Controllers
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@id", id);
                 SqlDataReader reader = command.ExecuteReader(); // ejecuta el SELECT y guarda los resultados
-                connection.Close(); //agregado
 
                 if (reader.Read())
                 {
@@ -304,6 +401,7 @@ namespace LoginMVC.Controllers
 
                 }
                 ;
+                connection.Close(); //agregado
             }
             return View(estado);
         }
@@ -333,9 +431,7 @@ namespace LoginMVC.Controllers
 
         public IActionResult List()
         {
-
             List<AnimalModel> animales = new List<AnimalModel>();
-
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -402,7 +498,7 @@ namespace LoginMVC.Controllers
 
             return View(animales);
         }
-        
+
         public IActionResult Raza()
         {
             //string connectionString = "Server=DESKTOP-TBEAQV2;Database=LogInUser;Trusted_Connection=True;TrustServerCertificate=True;";
@@ -505,11 +601,32 @@ namespace LoginMVC.Controllers
 
             return RedirectToAction("Raza");
         }
-        //código de eve
+        //código de eve-----------------------------------------------------------------------------+++++++++++++++++++++++++
         public IActionResult Tamaño()
         {
-            return View();
+
+            List<AnimalTamañoModel> listaTamaños = new List<AnimalTamañoModel>();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT * FROM Tamaño";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    listaTamaños.Add(new AnimalTamañoModel
+                    {
+                        idTamaño = Convert.ToInt32(reader["idTamaño"]),
+                        descripcion = reader["descripcion"].ToString()
+                    });
+                }
+            }
+
+            return View(listaTamaños);
         }
+
         public IActionResult EliminarTamaño(int id)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -572,5 +689,29 @@ namespace LoginMVC.Controllers
 
             return View(tamañoEditado);
         }
+
+        [HttpGet]
+        public IActionResult AgregarTamaño()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AgregarTamaño(AnimalTamañoModel nuevoTamaño)
+        {
+            if (ModelState.IsValid)
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "INSERT INTO Tamaño (descripcion) VALUES (@descripcion)";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@descripcion", nuevoTamaño.descripcion);
+                    cmd.ExecuteNonQuery();
+                }
+                return RedirectToAction("Tamaño");
+            }
+            return View(nuevoTamaño);
+        }
+
     }
 }

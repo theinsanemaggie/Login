@@ -6,10 +6,12 @@
 }
 else
 {
-    <p class="mensaje-cantidad">Cantidad de estados: @Model.Count</p>
+   // <p class="mensaje-cantidad">Cantidad de estados: @Model.Count</p>
 }
 
-<style> 
+<style>
+
+    /* Paleta de colores personalizada */
     .main-container {
         max-width: 1000px;
         margin: 2rem auto;
@@ -24,22 +26,6 @@ else
         margin-bottom: 1.5rem;
     }
 
-    .mensaje-vacio {
-        text-align: center;
-        color: #999;
-        font-size: 1.2rem;
-        margin-top: 1rem;
-        font-family: Consolas, monospace;
-    }
-
-    .mensaje-cantidad {
-        text-align: center;
-        color: #888;
-        font-size: 1.2rem;
-        margin-top: 1rem;
-        font-family: Consolas, monospace;
-    }
-
     .custom-table {
         width: 100%;
         border-collapse: collapse;
@@ -49,23 +35,24 @@ else
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-        .custom-table th, .custom-table td {
-            padding: 0.8rem 1rem;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
+    .custom-table th,
+    .custom-table td {
+        padding: 0.8rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
 
-        .custom-table th {
-            background-color: #DEC1DB;
-            color: #872d72;
-            font-weight: bold;
-        }
+    .custom-table th {
+        background-color: #DEC1DB;
+        color: #872d72;
+        font-weight: bold;
+    }
 
-        .custom-table tr:hover {
-            background-color: #EEE2DF;
-        }
+    .custom-table tr:hover {
+        background-color: #EEE2DF;
+    }
 
-    .action-buttons { 
+    .action-buttons {
         display: flex;
         gap: 0.5rem;
     }
@@ -83,15 +70,16 @@ else
         display: inline-block;
     }
 
-        .btn-custom:hover {
-            background-color: #872d72;
-        }
+    .btn-custom:hover {
+        background-color: #872d72;
+    }
 
     .btn-agregar {
         margin-top: 1.5rem;
         display: inline-block;
     }
 </style>
+
 
 <div class="main-container">
     <h2 class="form-title">Lista de Estados</h2>

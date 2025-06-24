@@ -1,0 +1,107 @@
+﻿@model LoginMVC.Models.AnimalRazaModel
+
+<style>
+    .main-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+        font-family: Consolas, monospace;
+    }
+
+    .form-title {
+        text-align: center;
+        color: #DE5C8F;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .user-form {
+        background-color: #FBF4EB;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            color: #DE5C8F;
+        }
+
+    .form-control {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+        font-family: Consolas, monospace;
+        font-size: 1rem;
+        background-color: #EEE2DF;
+    }
+
+    .btn-submit {
+        background-color: #DE5C8F;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        align-self: center;
+        transition: background-color 0.3s;
+    }
+
+        .btn-submit:hover {
+            background-color: #872d72;
+        }
+
+    .btn-cancel {
+        background-color: #DEC1DB;
+        color: #872d72;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        align-self: center;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+        .btn-cancel:hover {
+            background-color: #7C4EBB;
+            color: white;
+        }
+
+</style>
+
+<div class="main-container">
+    <h2 class="form-title">Agregar Raza</h2>
+
+    <form asp-action="CrearRaza" method="post" class="user-form">
+        <div class="form-group">
+            <label asp-for="descripcion"></label>
+            <input asp-for="descripcion" class="form-control" />
+            <span asp-validation-for="descripcion" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">Guardar</button>
+        <a href="/Animales/Raza" class="btn-cancel">Cancelar</a>
+    </form>
+</div>
