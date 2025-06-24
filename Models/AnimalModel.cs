@@ -25,6 +25,8 @@ namespace LoginMVC.Models
     }
     public class AnimalRazaModel
     {
+        public int idRaza { get; set; }
+        public string descripcion { get; set; }
     }
     public class AnimalTamañoModel
     {
