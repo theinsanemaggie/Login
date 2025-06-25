@@ -1,121 +1,122 @@
 ﻿@model List<LoginMVC.Models.UserModel>
 
-<h2 class="titulo-listado">Listado de Usuarios</h2>
+<h2 class="form-title">Listado de Usuarios</h2>
 
-<table class="user-table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Username</th>
-            <th>Password</th>
-            <th>Email</th>
-            <th>Name</th>
-            <th>Lastname</th>
-            <th>Birthday</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var user in Model)
-        {
+<div class="main-container">
+    <table class="styled-table">
+        <thead>
             <tr>
-                <td>@user.id</td>
-                <td>@user.username</td>
-                <td>@user.password</td>
-                <td>@user.email</td>
-                <td>@user.name</td>
-                <td>@user.lastname</td>
-                <td>@user.birthday.ToString("yyyy-MM-dd")</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@user.id" class="btn btn-sm btn-primary">Editar</a>
-                    <form asp-action="Delete" method="post" asp-route-id="@user.id" style="display:inline;" onsubmit="return confirm('¿Estás segura que querés eliminar este usuario?');">
-                        <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
-                    </form>
-                </td>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Birthday</th>
+                <th>Acciones</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.id</td>
+                    <td>@user.username</td>
+                    <td>@user.password</td>
+                    <td>@user.email</td>
+                    <td>@user.name</td>
+                    <td>@user.lastname</td>
+                    <td>@user.birthday.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <div class="action-buttons">
+                            <a asp-action="Edit" asp-route-id="@user.id" class="btn-custom">Editar</a>
+                            <form asp-action="Delete" method="post" asp-route-id="@user.id" onsubmit="return confirm('¿Estás segura que querés eliminar este usuario?');">
+                                <button type="submit" class="btn-custom">Eliminar</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="agregar-btn-container">
+        <a href="/User/Create" class="btn-custom">Agregar Nuevo Usuario</a>
+    </div>
+</div>
 
 <style>
-    /* Paleta de colores
-        #EEE2DF -- cremita
-        #DEC1DB -- rosa bebé
-        #5B61B2 -- lila azulado
-        #2F80E4 -- azul
-        #6DA0E1 -- celeste
-        --
-        #EDABBE -- rosita fondo
-        #DE5C8F -- rosa botones
-        #7C4EBB -- violeta banner
-        #872d72 -- violeta vino
-        #FBF4EB -- CARD
-    */
-    .titulo-listado {
+    .main-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+        font-family: Consolas, monospace;
+    }
+
+    .form-title {
         text-align: center;
         color: #DE5C8F;
         font-size: 2rem;
         margin-bottom: 1.5rem;
     }
 
-    .user-table {
+    .styled-table {
         width: 100%;
         border-collapse: collapse;
-        border-radius: 0.5rem;
-        overflow: hidden;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         background-color: #FBF4EB;
-        margin: auto;
-        font-family: Consolas, sans-serif;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         font-size: 0.95rem;
     }
 
-    .user-table thead {
+        .styled-table thead {
+            background-color: #DE5C8F;
+            color: white;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #EEE2DF;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #DEC1DB;
+        }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .btn-custom {
         background-color: #DE5C8F;
-        color: #FBF4EB;
-    }
-
-    .user-table thead tr:hover {
-        background-color: #DE5C8F !important;
-        color: #FBF4EB !important;
-    }
-
-    .user-table th,
-    .user-table td {
-        padding: 0.75rem 1rem;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .user-table tbody tr:hover {
-        background-color: #f3f3f3;
-    }
-
-    .btn {
-        font-family: Consolas, sans-serif;
-        padding: 0.3rem 0.6rem;
-        border: none;
-        border-radius: 0.3rem;
-        cursor: pointer;
-        font-size: 0.85rem;
-        text-decoration: none;
         color: white;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 0.8rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: inline-block;
     }
 
-    .btn-primary {
-        background-color: #DE5C8F;
-    }
+        .btn-custom:hover {
+            background-color: #872d72;
+        }
 
-    .btn-primary:hover {
-       background-color: #7C4EBB;
+    .agregar-btn-container {
+        margin-top: 1.5rem;
+        text-align: right;
     }
-
-    .btn-danger {
-        background-color: #7C4EBB;
-    }
-
-    .btn-danger:hover {
-       background-color: #872d72;
-    }
-
 </style>

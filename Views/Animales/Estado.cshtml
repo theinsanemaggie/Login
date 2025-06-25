@@ -1,17 +1,10 @@
 @model List<LoginMVC.Models.AnimalEstadoModel>
 
-@if (Model == null || !Model.Any())
-{
-    <p class="mensaje-vacio">No hay estados cargados.</p>
-}
-else
-{
-   // <p class="mensaje-cantidad">Cantidad de estados: @Model.Count</p>
+@{
+    ViewData["Title"] = "Lista de Estados";
 }
 
 <style>
-
-    /* Paleta de colores personalizada */
     .main-container {
         max-width: 1000px;
         margin: 2rem auto;
@@ -26,88 +19,108 @@ else
         margin-bottom: 1.5rem;
     }
 
-    .custom-table {
-        width: 100%;
+    .styled-table {
         border-collapse: collapse;
+        margin: 1rem auto;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        width: 100%;
         background-color: #FBF4EB;
         border-radius: 1rem;
         overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    .custom-table th,
-    .custom-table td {
-        padding: 0.8rem 1rem;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    }
+        .styled-table thead {
+            background-color: #DE5C8F;
+            color: white;
+        }
 
-    .custom-table th {
-        background-color: #DEC1DB;
-        color: #872d72;
-        font-weight: bold;
-    }
+        .styled-table th,
+        .styled-table td {
+            padding: 1rem;
+            text-align: left;
+        }
 
-    .custom-table tr:hover {
-        background-color: #EEE2DF;
-    }
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #EEE2DF;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #DEC1DB;
+            color: white;
+        }
 
     .action-buttons {
         display: flex;
         gap: 0.5rem;
     }
 
-    .btn-custom {
+    .btn-submit {
         background-color: #DE5C8F;
         color: white;
-        padding: 0.4rem 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
         border: none;
         border-radius: 0.8rem;
-        font-family: Consolas, monospace;
-        font-size: 0.9rem;
+        cursor: pointer;
         text-decoration: none;
         transition: background-color 0.3s;
-        display: inline-block;
     }
 
-    .btn-custom:hover {
-        background-color: #872d72;
-    }
+        .btn-submit:hover {
+            background-color: #872d72;
+        }
 
     .btn-agregar {
-        margin-top: 1.5rem;
         display: inline-block;
+        margin-top: 1.5rem;
+        float: right;
+    }
+
+    .mensaje-vacio {
+        text-align: center;
+        font-style: italic;
+        color: #999;
+        margin-top: 1rem;
     }
 </style>
-
 
 <div class="main-container">
     <h2 class="form-title">Lista de Estados</h2>
 
-    <table class="custom-table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Descripción</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var estado in Model)
-            {
+    @if (Model == null || !Model.Any())
+    {
+        <p class="mensaje-vacio">No hay estados cargados.</p>
+    }
+    else
+    {
+        <table class="styled-table">
+            <thead>
                 <tr>
-                    <td>@estado.idEstado</td>
-                    <td>@estado.descripcion</td>
-                    <td>
-                        <div class="action-buttons">
-                        <a href="/Animales/EditarEstado/@estado.idEstado" class="btn-custom">Editar</a>
-                        <a href="/Animales/EliminarEstado/@estado.idEstado" class="btn-custom" onclick="return confirm('¿Estás segura que querés eliminar este tamaño?');">Eliminar</a>
-                        </div>
-                    </td>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var estado in Model)
+                {
+                    <tr>
+                        <td>@estado.idEstado</td>
+                        <td>@estado.descripcion</td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="/Animales/EditarEstado/@estado.idEstado" class="btn-submit">Editar</a>
+                                <a href="/Animales/EliminarEstado/@estado.idEstado" class="btn-submit" onclick="return confirm('¿Estás segura que querés eliminar este estado?');">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 
-    <a href="/Animales/AgregarEstado" class="btn-custom btn-agregar">Agregar Estado</a>
+    <a href="/Animales/AgregarEstado" class="btn-submit btn-agregar">Agregar Estado</a>
 </div>

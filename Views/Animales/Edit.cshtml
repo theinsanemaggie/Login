@@ -60,11 +60,25 @@
         </div>
 
         <button type="submit" class="btn-submit">Guardar cambios</button>
-        <a asp-action="List" class="btn-submit" style="background-color: #6DA0E1;">Volver a la lista</a>
+        <a asp-action="List" class="btn-secondary">Volver a la lista</a>
     </form>
 </div>
 
 <style>
+    /* Paleta de colores
+            #EEE2DF -- cremita
+            #DEC1DB -- rosa bebé
+            #5B61B2 -- lila azulado
+            #2F80E4 -- azul
+            #6DA0E1 -- celeste
+            --
+            #EDABBE -- rosita fondo
+            #DE5C8F -- rosa botones
+            #7C4EBB -- violeta banner
+            #872d72 -- violeta vino
+            #FBF4EB -- card
+        */
+
     .main-container {
         max-width: 1000px;
         margin: 2rem auto;
@@ -109,6 +123,7 @@
         padding: 0.5rem;
         border-radius: 0.5rem;
         border: 1px solid #ccc;
+        font-family: Consolas, monospace;
         font-size: 1rem;
         background-color: #EEE2DF;
     }
@@ -118,17 +133,39 @@
         color: white;
         padding: 0.6rem 1.2rem;
         font-size: 1rem;
+        font-family: Consolas, monospace;
         border: none;
         border-radius: 1rem;
         cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 1rem;
+        align-self: center;
         transition: background-color 0.3s;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        margin-top: 0.5rem;
     }
 
     .btn-submit:hover {
         background-color: #872d72;
+    }
+
+    .btn-secondary {
+        background-color: #7C4EBB;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        align-self: center;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5B61B2;
     }
 </style>

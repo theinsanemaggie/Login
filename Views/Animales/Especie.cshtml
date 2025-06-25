@@ -12,6 +12,7 @@
         </div>
 
         <button type="submit" class="btn-submit">Guardar especie</button>
+        <a href="/Animales/ListarEspecies" class="btn-cancel">Cancelar</a>
     </form>
 
     @if (ViewBag.Message != null)
@@ -64,11 +65,11 @@
         flex-direction: column;
     }
 
-        .form-group label {
-            font-weight: bold;
-            margin-bottom: 0.3rem;
-            color: #DE5C8F;
-        }
+    .form-group label {
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+        color: #DE5C8F;
+    }
 
     .form-control {
         padding: 0.5rem;
@@ -92,7 +93,29 @@
         transition: background-color 0.3s;
     }
 
-        .btn-submit:hover {
-            background-color: #872d72;
-        }
+    .btn-submit:hover {
+        background-color: #872d72;
+    }
+
+    .btn-cancel {
+        background-color: #DEC1DB;
+        color: #872d72;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        align-self: center;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    .btn-cancel:hover {
+        background-color: #7C4EBB;
+        color: white;
+    }
 </style>

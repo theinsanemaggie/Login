@@ -2,12 +2,22 @@
 
 @{
     ViewData["Title"] = "Lista de Tamaños";
-
 }
 
 <style>
-
-    /* Paleta de colores personalizada */
+    /* Paleta de colores
+            #EEE2DF -- cremita
+            #DEC1DB -- rosa bebé
+            #5B61B2 -- lila azulado
+            #2F80E4 -- azul
+            #6DA0E1 -- celeste
+            --
+            #EDABBE -- rosita fondo
+            #DE5C8F -- rosa botones
+            #7C4EBB -- violeta banner
+            #872d72 -- violeta vino
+            #FBF4EB -- card
+        */
     .main-container {
         max-width: 1000px;
         margin: 2rem auto;
@@ -22,65 +32,71 @@
         margin-bottom: 1.5rem;
     }
 
-    .custom-table {
-        width: 100%;
+    .styled-table {
         border-collapse: collapse;
+        margin: 1rem auto;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        width: 100%;
         background-color: #FBF4EB;
         border-radius: 1rem;
         overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    .custom-table th,
-    .custom-table td {
-        padding: 0.8rem 1rem;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
+        .styled-table thead {
+            background-color: #DE5C8F;
+            color: white;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #EEE2DF;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #DEC1DB;
+            transition: background-color 0.3s ease;
+        }
+
+    .btn-submit {
+        background-color: #DE5C8F;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
-    .custom-table th {
-        background-color: #DEC1DB;
-        color: #872d72;
-        font-weight: bold;
-    }
-
-    .custom-table tr:hover {
-        background-color: #EEE2DF;
-    }
+        .btn-submit:hover {
+            background-color: #872d72;
+        }
 
     .action-buttons {
         display: flex;
         gap: 0.5rem;
     }
 
-    .btn-custom {
-        background-color: #DE5C8F;
-        color: white;
-        padding: 0.4rem 1rem;
-        border: none;
-        border-radius: 0.8rem;
-        font-family: Consolas, monospace;
-        font-size: 0.9rem;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        display: inline-block;
-    }
-
-        .btn-custom:hover {
-            background-color: #872d72;
-        }
-
-    .btn-agregar {
-        margin-top: 1.5rem;
-        display: inline-block;
+    .bottom-button-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
     }
 </style>
 
 <div class="main-container">
     <h2 class="form-title">Lista de Tamaños</h2>
-    
 
-    <table class="custom-table">
+    <table class="styled-table">
         <thead>
             <tr>
                 <th>ID</th>
@@ -98,8 +114,8 @@
                         <td>@tamaño.descripcion</td>
                         <td>
                             <div class="action-buttons">
-                                <a href="/Animales/EditarTamaño/@tamaño.idTamaño" class="btn-custom">Editar</a>
-                                <a href="/Animales/EliminarTamaño/@tamaño.idTamaño" class="btn-custom" onclick="return confirm('¿Estás segura que querés eliminar este tamaño?');">Eliminar</a>
+                                <a href="/Animales/EditarTamaño/@tamaño.idTamaño" class="btn-submit">Editar</a>
+                                <a href="/Animales/EliminarTamaño/@tamaño.idTamaño" class="btn-submit" onclick="return confirm('¿Estás segura que querés eliminar este tamaño?');">Eliminar</a>
                             </div>
                         </td>
                     </tr>
@@ -114,5 +130,7 @@
         </tbody>
     </table>
 
-    <a href="/Animales/AgregarTamaño" class="btn-custom btn-agregar">Agregar Nuevo Tamaño</a>
+    <div class="bottom-button-container">
+        <a href="/Animales/AgregarTamaño" class="btn-submit">Agregar Nuevo Tamaño</a>
+    </div>
 </div>

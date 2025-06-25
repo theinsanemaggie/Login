@@ -235,11 +235,36 @@ namespace LoginMVC.Controllers
             }
 
         }
-        public IActionResult Delete()
+        public IActionResult Delete(int id)
         {
-            return View();
-        }
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "DELETE FROM Animal WHERE idAnimal = @id";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@id", id);
 
+                    connection.Open();
+                    int filasAfectadas = command.ExecuteNonQuery();
+
+                    if (filasAfectadas > 0)
+                    {
+                        ViewBag.Message = "El animal fue eliminado exitosamente.";
+                    }
+                    else
+                    {
+                        ViewBag.Message = "No se encontró el animal a eliminar.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = "Error al eliminar el animal: " + ex.Message;
+            }
+
+            return RedirectToAction("List");
+        }
         //------------------------------------------------------------------------------------------------------------------
         //public static List<AnimalEspecieModel> listaEspecies = new List<AnimalEspecieModel>();
         // GET para mostrar el formulario de agregar especie

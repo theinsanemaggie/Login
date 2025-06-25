@@ -3,8 +3,6 @@
 <div class="main-container">
     <h1 class="form-title">Listado de Especies</h1>
 
-    <a asp-controller="Animales" asp-action="Especie" class="btn-submit">Agregar nueva especie</a>
-
     <table class="styled-table">
         <thead>
             <tr>
@@ -21,15 +19,34 @@
                     <td>@especie.descripcion</td>
                     <td>
                         <a asp-controller="Animales" asp-action="EditarEspecie" asp-route-id="@especie.idEspecie" class="btn-submit">Editar</a>
-                        <a asp-controller="Animales" asp-action="EliminarEspecie" asp-route-id="@especie.idEspecie" class="btn-submit" style="background-color: #ff4d4d;">Eliminar</a>
+                        <a asp-controller="Animales" asp-action="EliminarEspecie" asp-route-id="@especie.idEspecie" class="btn-submit" >Eliminar</a>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
+    <div class="bottom-button-container">
+        <a asp-controller="Animales" asp-action="Especie" class="btn-submit">Agregar nueva especie</a>
+    </div>
 </div>
 
+
+
 <style>
+    /* Paleta de colores
+            #EEE2DF -- cremita
+            #DEC1DB -- rosa bebé
+            #5B61B2 -- lila azulado
+            #2F80E4 -- azul
+            #6DA0E1 -- celeste
+            --
+            #EDABBE -- rosita fondo
+            #DE5C8F -- rosa botones
+            #7C4EBB -- violeta banner
+            #872d72 -- violeta vino
+            #FBF4EB -- card
+        */
+
     .main-container {
         max-width: 1000px;
         margin: 2rem auto;
@@ -42,25 +59,6 @@
         color: #DE5C8F;
         font-size: 2rem;
         margin-bottom: 1.5rem;
-    }
-
-    .btn-submit {
-        background-color: #DE5C8F;
-        color: white;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        font-family: Consolas, monospace;
-        border: none;
-        border-radius: 0.8rem;
-        cursor: pointer;
-        text-decoration: none;
-        margin-right: 0.5rem;
-        display: inline-block;
-        transition: background-color 0.3s;
-    }
-
-    .btn-submit:hover {
-        background-color: #872d72;
     }
 
     .styled-table {
@@ -88,5 +86,35 @@
 
     .styled-table tbody tr:nth-child(even) {
         background-color: #EEE2DF;
+    }
+
+    .styled-table tbody tr:hover {
+        background-color: #DEC1DB;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-submit {
+        background-color: #DE5C8F;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-family: Consolas, monospace;
+        border: none;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 0.5rem;
+        display: inline-block;
+        transition: background-color 0.3s;
+    }
+
+    .btn-submit:hover {
+        background-color: #872d72;
+    }
+
+    .bottom-button-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
     }
 </style>
