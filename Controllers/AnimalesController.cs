@@ -167,12 +167,10 @@ namespace LoginMVC.Controllers
             }
             ViewBag.Estados = estados;
         }
-        public IActionResult Edit()
-        {
-            return View();
-        }
+    
 
-        public IActionResult Editar(AnimalModel Animal)
+        [HttpPost]
+        public IActionResult Edit(AnimalModel Animal)
         {
             using SqlConnection connection = new SqlConnection(connectionString);
             {
@@ -194,27 +192,29 @@ namespace LoginMVC.Controllers
                 command.Parameters.AddWithValue("@edad", Animal.edad);
                 command.Parameters.AddWithValue("@idEstado", Animal.idEstado);
                 command.Parameters.AddWithValue("@fechaIngreso", Animal.fechaIngreso);
+                command.Parameters.AddWithValue("@idAnimal", Animal.idAnimal);
 
                 connection.Open();
                 command.ExecuteNonQuery();
+                connection.Close();
 
 
-                return RedirectToAction("Lista");
+                return RedirectToAction("List");
             }
         }
 
         //y este se encarga de ir a bucar los datos del usuario específico
         //Para mostrar los datos y permitirme en el front modificarlos
-
-        public IActionResult Editar(int id)
+        [HttpGet]
+        public IActionResult Edit(int id)
         {
             AnimalModel Animal = new AnimalModel();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT idAnimal, nombre, idEspecie, idTamaño, idRaza, edad, idEstado, fechaIngreso from Animal where id = " + id.ToString();
-
+                string query = "SELECT idAnimal, nombre, idEspecie, idTamaño, idRaza, edad, idEstado, fechaIngreso FROM Animal WHERE idAnimal = @id";
                 SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", id);
                 connection.Open();
 
                 SqlDataReader reader = command.ExecuteReader();
@@ -228,12 +228,12 @@ namespace LoginMVC.Controllers
                     Animal.edad = Convert.ToInt32(reader["edad"]);
                     Animal.idEstado = Convert.ToInt32(reader["idEstado"]);
                     Animal.fechaIngreso = Convert.ToDateTime(reader["fechaIngreso"]);
-
                 }
-
+                CargarCombos(); // Esto es clave para los <select>
                 return View(Animal);
-
+                //connection.Close();
             }
+
         }
         public IActionResult Delete()
         {

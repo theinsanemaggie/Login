@@ -29,7 +29,7 @@
                 <td>@animal.estado</td>
                 <td>@animal.fechaIngreso.ToString("yyyy-MM-dd")</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@animal.idAnimal" class="btn btn-sm btn-primary">Editar</a>
+                    <a asp-controller="Animales" asp-action="Edit" asp-route-id="@animal.idAnimal" class="btn btn-sm btn-primary">Editar</a>
                     <form asp-action="Delete" method="post" asp-route-id="@animal.idAnimal" style="display:inline;" onsubmit="return confirm('¿Estás segura que querés eliminar este animal?');">
                         <button type="submit" class="btn btn-sm btn-primary">Eliminar</button>
                     </form>
@@ -72,26 +72,26 @@
         font-size: 0.95rem;
     }
 
-        .animal-table thead {
-            background-color: #DE5C8F;
-            color: #FBF4EB;
-        }
+    .animal-table thead {
+        background-color: #DE5C8F;
+        color: #FBF4EB;
+    }
 
-            .animal-table thead tr:hover {
-                background-color: #DE5C8F !important;
-                color: #FBF4EB !important;
-            }
+    .animal-table thead tr:hover {
+        background-color: #DE5C8F !important;
+        color: #FBF4EB !important;
+    }
 
-        .animal-table th,
-        .animal-table td {
-            padding: 0.75rem 1rem;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
+    .animal-table th,
+    .animal-table td {
+        padding: 0.75rem 1rem;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
 
-        .user-table tbody tr:hover {
-            background-color: #f3f3f3;
-        }
+    .user-table tbody tr:hover {
+        background-color: #f3f3f3;
+    }
 
     .btn {
         font-family: Consolas, sans-serif;
@@ -108,16 +108,18 @@
         background-color: #DE5C8F;
     }
 
-        .btn-primary:hover {
-            background-color: #7C4EBB;
-        }
+    .btn-primary:hover {
+        background-color: #7C4EBB;
+    }
 
     .btn-danger {
         background-color: #7C4EBB;
     }
 
-        .btn-danger:hover {
-            background-color: #872d72;
-        }
+    .btn-danger:hover {
+        background-color: #872d72;
+    }
+
+
 
 </style>

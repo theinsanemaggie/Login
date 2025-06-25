@@ -65,7 +65,6 @@ namespace LoginMVC.Controllers
         //código "for method" revisado y corregido, no tocar
         public ActionResult ForMethod(string username, string password, string email, string name, string lastname, DateTime birthday)
         {
-            string connectionString = @"Server=DESKTOP-C4T982S\SQLSERVERMS2022;Database=LogInUser;User Id=Maggie;Password=tatakae;Trusted_Connection=True;TrustServerCertificate=True;";
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
