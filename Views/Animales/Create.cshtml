@@ -1,4 +1,4 @@
-﻿@model AnimalModel
+﻿@model LoginMVC.Models.AnimalModel
 
 @{
     ViewData["Title"] = "Crear Animal";
@@ -15,20 +15,18 @@
 
         <div class="form-group">
             <label>Especie:</label>
-            <select asp-for="idEspecie" class="form-control">
-                <option value="1">Perro</option>
-                <option value="2">Gato</option>
-                <option value="3">Otros</option>
+            <select asp-for="idEspecie" class="form-control" asp-items="ViewBag.Especies">
+                <option value="">-- Seleccione una especie --</option>
             </select>
+            <span asp-validation-for="idEspecie" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label>Tamaño:</label>
-            <select asp-for="idTamaño" class="form-control">
-                <option value="1">Chico</option>
-                <option value="2">Mediano</option>
-                <option value="3">Grande</option>
+            <select asp-for="idTamaño" class="form-control" asp-items="ViewBag.Tamaños">
+                <option value="">-- Seleccione un tamaño --</option>
             </select>
+            <span asp-validation-for="idTamaño" class="text-danger"></span>
         </div>
         <!-- 
 
@@ -42,13 +40,12 @@
 
         <div class="form-group">
             <label>Raza:</label>
-            <select asp-for="idRaza" class="form-control">
-                <option value="1">Mestizo</option>
-                <option value="2">Caniche</option>
-                <option value="3">Ovejero Alemán</option>
-                <option value="4">Otros</option>
+            <select asp-for="idRaza" class="form-control" asp-items="ViewBag.Razas">
+                <option value="">-- Seleccione una raza --</option>
             </select>
+            <span asp-validation-for="idRaza" class="text-danger"></span>
         </div>
+
 
         <div class="form-group">
             <label>Edad:</label>
@@ -57,12 +54,10 @@
 
         <div class="form-group">
             <label>Estado:</label>
-            <select asp-for="idEstado" class="form-control">
-                <option value="1">Disponible</option>
-                <option value="2">Adoptado</option>
-                <option value="3">En tránsito</option>
-                <option value="4">En pensionado</option>
+            <select asp-for="idEstado" class="form-control" asp-items="ViewBag.Estados">
+                <option value="">-- Seleccione un estado --</option>
             </select>
+            <span asp-validation-for="idEstado" class="text-danger"></span>
         </div>
 
         <div class="form-group">
@@ -72,6 +67,9 @@
 
         <button type="submit" class="btn-submit">Guardar</button>
     </form>
+    <div style="margin-top: 10px; text-align: center;">
+        <a href="@Url.Action("Listar", "Animales")" class="btn-ir-lista">Ver listado de animales</a>
+    </div>
 </div>
 
 <script>
@@ -97,6 +95,42 @@
 </script>
 
 <style>
+    .mensaje-exito {
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+        color: #155724;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .mensaje-error {
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        color: #721c24;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .btn-ir-lista {
+        background-color: #DE5C8F;
+        color: white;
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        display: inline-block;
+        transition: background-color 0.3s;
+    }
+
+    .btn-ir-lista:hover {
+        background-color: #872d72;
+    }
     .main-container {
         max-width: 1000px;
         margin: 2rem auto;
@@ -131,11 +165,11 @@
         flex-direction: column;
     }
 
-    .form-group label {
-        font-weight: bold;
-        margin-bottom: 0.3rem;
-        color: #DE5C8F;
-    }
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            color: #DE5C8F;
+        }
 
     .form-control {
         padding: 0.5rem;
@@ -163,11 +197,14 @@
         background-color: #872d72;
     }
 </style>
+
 @if (ViewBag.Mensaje != null)
 {
-    <h3 style="color:#4A90E2; font-family: 'Bodoni MT Black', serif; font-weight: 700; margin-bottom: 1rem; text-align: center;">
-        @ViewBag.Mensaje
-    </h3>
+    <div style="background-color: #fde2e6; color: #4A90E2; border: 1.5px solid #4A90E2; border-radius: 12px; padding: 1rem 1.5rem; max-width: 500px; margin: 1rem auto; font-family: 'Bodoni MT Black', serif; text-align: center; box-shadow: 0 3px 8px rgba(244, 67, 54, 0.25);">
+        <h3 style="color:#155724; font-family: 'Bodoni MT Black', serif; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+            @ViewBag.Mensaje
+        </h3>
+    </div>
 }
 
 @if (ViewBag.Error != null)

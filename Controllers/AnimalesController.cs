@@ -1,6 +1,7 @@
 using LoginMVC.Models;
 using Microsoft.AspNetCore.Authorization;
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
 using System.Data;
 
@@ -20,6 +21,12 @@ namespace LoginMVC.Controllers
 
         public IActionResult Create()
         {
+            CargarCombos();
+
+            // DEBUG: verificar si los combos vienen vacíos
+            if (ViewBag.Especies == null) Console.WriteLine("Especies viene null");
+            if (((List<SelectListItem>)ViewBag.Especies).Count == 0) Console.WriteLine("Especies viene vacío");
+
             return View();
         }
         [HttpPost]
@@ -78,9 +85,87 @@ namespace LoginMVC.Controllers
             catch (Exception ex)
             {
                 ViewBag.Error = "Error al insertar el animal " + nombre + ": " + ex.Message;
+                CargarCombos(); // ¡Esto es importante para que los dropdowns no queden vacíos si hay error!
             }
 
-            return View();
+            CargarCombos(); // siempre importante cargar combos
+            ModelState.Clear(); // limpia el modelo
+            return View(new AnimalModel()); // retorna un modelo limpio
+        }
+
+        private void CargarCombos()
+        {
+            // Especies
+            List<SelectListItem> especies = new List<SelectListItem>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT idEspecie, descripcion FROM Especie", conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    especies.Add(new SelectListItem
+                    {
+                        Value = reader["idEspecie"].ToString(),
+                        Text = reader["descripcion"].ToString()
+                    });
+                }
+            }
+            ViewBag.Especies = especies;
+
+            // Tamaños
+            List<SelectListItem> tamaños = new List<SelectListItem>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT idTamaño, descripcion FROM Tamaño", conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    tamaños.Add(new SelectListItem
+                    {
+                        Value = reader["idTamaño"].ToString(),
+                        Text = reader["descripcion"].ToString()
+                    });
+                }
+            }
+            ViewBag.Tamaños = tamaños;
+
+            // Razas
+            List<SelectListItem> razas = new List<SelectListItem>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT idRaza, descripcion FROM Raza", conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    razas.Add(new SelectListItem
+                    {
+                        Value = reader["idRaza"].ToString(),
+                        Text = reader["descripcion"].ToString()
+                    });
+                }
+            }
+            ViewBag.Razas = razas;
+
+            // Estados
+            List<SelectListItem> estados = new List<SelectListItem>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT idEstado, descripcion FROM Estado", conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    estados.Add(new SelectListItem
+                    {
+                        Value = reader["idEstado"].ToString(),
+                        Text = reader["descripcion"].ToString()
+                    });
+                }
+            }
+            ViewBag.Estados = estados;
         }
         public IActionResult Edit()
         {
